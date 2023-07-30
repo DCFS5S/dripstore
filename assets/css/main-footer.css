@@ -1,4 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
 .main-footer {
-  background-color: aliceblue;
-  height: 200px;
+  display: flex;
+  color: white;
+  background-color: #1F1F1F;
+  width: 100%;
+  padding-top: 72px; 
+  padding-inline: 100px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  flex-wrap: wrap;
+}
+.main-footer #footer1{
+  margin-right: 205px;
+  width: 25%;
+}
+.main-footer #footer1 h2 {
+  font-weight: 600;
+  font-size: 36.395px;
+  margin-bottom: 35px;
+}
+.main-footer #footer1 p {
+  margin-bottom: 40px;
+}
+.main-footer .information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  font-weight: 400;
+  margin-right: 102px;
+
+}
+.main-footer .information a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 38px;
+}
+.main-footer .information h5 {
+  font-size: 18px;
+}
+.main-footer .contacts h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.main-footer .contacts a {
+  text-decoration: none;
+  color: white;
+  margin-top: 14px;
+}
+.main-footer .contacts {
+  width: 20%;
+}
+.main-footer #copy {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #FFF5;
+    padding: 23px;
 }
