@@ -1,5 +1,11 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
 .featured-collections {
-  height: 400px;
+  height: 700px;
 }
 
 * {
@@ -24,13 +30,15 @@
 
 .featured-collections_dad {
   display: flex;
-  margin-top: 20px;
-  margin-left: 100px;
+  margin: 20px 100px;
   gap: 12px;
 }
 
 .featured-collections_dad span {
   display: inline-flex;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
   padding: 5px 15px;
   margin-top: 34px;
   margin-left: 30px;
@@ -74,12 +82,16 @@
   letter-spacing: 0.75px;
 }
 
+.box {
+  margin: auto;
+}
+
 .featured-collections_son_1 {
   width: 405px;
   height: 251px;
   border-radius: 8px;
   background: #D8E3F2;
-  background-image: url();
+  background-image: url(../css/images-sessao-destaque/camisa-starwars.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
 }
@@ -89,7 +101,7 @@
   height: 251px;
   border-radius: 8px;
   background: #D8E3F2;
-  background: url();
+  background-image: url(../css/images-sessao-destaque/headphone.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
   }
@@ -99,7 +111,7 @@
   height: 251px;
   border-radius: 8px;
   background: #D8E3F2;
-  background-image: url(../img/headphone.png);
+  background-image: url(../css/images-sessao-destaque/tenis.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
 }
@@ -108,33 +120,181 @@
   width: 184px;
 }
 
-.categories {
+#destaque-2 {
+  color: #474747;
+  font-family: 'Inter';
+  margin-top: 100px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
-.category {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.content-container-3 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  position: relative;
+  gap: 48px;
+
 }
 
-.category:hover {
-  background-color: #f9f9f9;
+.icon {
+  width: 104px;
+  height: 104px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(46, 46, 46, 0.225);
+  
+  
 }
 
-.cta-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
+.icon a {
   text-decoration: none;
-  border-radius: 5px;
+  color: #474747;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
 }
 
-.cta-button:hover {
-  background-color: #0056b3;
+.item-4 {
+  background: #fff url(../css/images-sessao-destaque/tshirt.svg) no-repeat center center;
+  position: relative;
+
+}
+
+.item-4 > a {
+  position: absolute;
+  top: 110px;
+  left: 11px;
+} 
+
+.item-5 {
+  background: #fff url(../css/images-sessao-destaque/pants.svg) no-repeat center center;
+  position: relative;
+}
+
+.item-5 > a {
+  position: absolute;
+  top: 110px;
+  left: 28px;
+}
+
+.item-6 {
+  background: #fff url(../css/images-sessao-destaque/pants.svg) no-repeat center center;
+  position: relative;
+}
+
+.item-6 > a {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+
+.item-7 {
+  background: #fff url(../css/images-sessao-destaque/headphones.svg) no-repeat center center;
+  position: relative;
+}
+
+.item-7 > a {
+  position: absolute;
+  top: 110px;
+  left: 6px;
+}
+
+.item-8 {
+  background: #fff url(../css/images-sessao-destaque/sneakers.svg) no-repeat center center;
+  position: relative;
+}
+
+.item-8 > a {
+  position: absolute;
+  top: 110px;
+  left: 33px;
+}
+
+.subtitulo {
+  padding-top: 10px;
+  margin-left: 327px;
+  margin-right: 396px;
+}
+
+.subtitulo a {
+  color: var(--cor05);
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  position: relative;
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+
+  .featured-collections {
+    height: 1200px;
+  }
+
+  .featured-collections .title_section {
+    text-align: center;
+    margin-right: 220px;
+  }
+
+  .featured-collections_dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 100px;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  
+
+  .featured-collections{
+    height: 1400px;
+  }
+
+  .featured-collections .title_section {
+    margin-left: 20px;
+    margin-right: 160px;
+    width: 287px;
+  }
+
+  .featured-collections_dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+    width: 338px;
+    height: 212px;
+    background-size: 195px 200px;
+  }
+
+  .featured-collections_dad span {
+    margin-top: 20px;
+  }
+  .featured-collections_dad p {
+    width: 175px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .content-container-3 {
+    margin-bottom: 80px;
+  }
 }
