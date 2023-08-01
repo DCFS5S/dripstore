@@ -1,4 +1,41 @@
+.featured-products * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .featured-products {
-  background-color: blue;
-  height: 200px;
+  background-color: #f9f8fE;
+  font-family: 'Inter', sans-serif;
+  padding: 120px 100px;
+}
+
+.featured-products .legend {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.featured-products .legend a {
+  color: #C92071;
+  text-decoration: none;
+}
+
+.featured-products .container .product {
+  width: 292px;
+}
+
+.featured-products .container .product img {
+  height: 321px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #fff;
+}
+.featured-products .container .product .price {
+  font-weight: 700;
+}
+.featured-products .container .product .price .old-price {
+  text-decoration: line-through;
+  color: #8F8F8F;
+  font-weight: 400;
 }
