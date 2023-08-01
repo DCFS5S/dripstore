@@ -1,5 +1,4 @@
 .featured-collections {
-  background-color: ;
   height: 400px;
 }
 
@@ -9,9 +8,6 @@
   box-sizing: border-box;
 }
 
-.featured-collections {
-
-}
 
 .featured-collections .title_section {
   margin-top: 38px;
