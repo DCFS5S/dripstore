@@ -1,4 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+  --color-primary: #C92071;
+  --color-primary-dark: #991956;
+  --color-warning: #F6AA1C;
+  --color-dark-gray: #1F1F1F;
+  --color-dark-gray-2: #474747;
+  --color-light-gray-2: #CCCCCC;
+  --color-light-gray-3: #F5F5F5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-banners {
-  background-color: yellow;
-  height: 200px;
+  font-family: 'Inter', sans-serif;
+  background: var(--color-light-gray-3);
+  padding: 5rem 0 3rem 0;
+}
+
+.ornament {
+  position: absolute;
+  right: -3rem;
+  top: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.col-1 {
+  width: 40%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.title-banner {
+  color: var(--color-dark-gray);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 103.125%;
+  letter-spacing: 1px;
+  margin: 1.25rem 0;
+}
+
+.text-small-banner {
+  color: var(--color-warning);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.75px;
+}
+
+.text-banner {
+  color: var(--color-dark-gray-2);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 188.889%;
+  letter-spacing: 0.75px;
+}
+
+.img-banner img {
+  width: 100%;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.navigation-buttons span {
+  background-color: var(--color-light-gray-2);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.navigation-buttons span.active {
+  background-color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-light-gray-3);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.75px;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 1.125rem 3.75rem;
+  transition: 3ms;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.mt-40 {
+  margin-top: 2.5rem;
 }
