@@ -19,7 +19,7 @@
 .main-banners {
   font-family: 'Inter', sans-serif;
   background: var(--color-light-gray-3);
-  padding: 5rem 0 3rem 0;
+  padding: 5rem 6.25rem 3rem 6.25rem;
 }
 
 .ornament {
