@@ -20,6 +20,7 @@
   font-family: 'Inter', sans-serif;
   background: var(--color-light-gray-3);
   padding: 5rem 6.25rem 3rem 6.25rem;
+  overflow: hidden;
 }
 
 .ornament {
@@ -40,7 +41,7 @@
 }
 
 .col-1 {
-  width: 40%;
+  width: 45%;
 }
 
 .col-2 {
@@ -130,4 +131,98 @@
 
 .mt-40 {
   margin-top: 2.5rem;
+}
+
+@media (max-width: 1023px) {
+
+  .main-banners {
+    padding: 5rem 2rem 3rem 2rem;
+  }
+
+  .ornament {
+    right: -5rem;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .col-1 {
+    width: 50%;
+  }
+
+  .title-banner {
+    font-size: 2.5rem;
+    line-height: 125%;
+    letter-spacing: 1px;
+  }
+
+  .text-small-banner {
+    color: var(--color-primary);
+    font-size: 1rem;
+    line-height: 157.143%;
+    letter-spacing: 0.75px;
+  }
+
+  .text-banner {
+    font-size: 1.rem;
+    line-height: 157.143%;
+    letter-spacing: 0.25px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-banners {
+    padding: 5rem 1.25rem 3rem 1.25rem;
+  }
+
+  .ornament {
+    right: -5rem;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-2 {
+    width: 80%;
+  }
+
+  .title-banner {
+    font-size: 2.5rem;
+    line-height: 125%;
+    letter-spacing: 1px;
+  }
+
+  .text-small-banner {
+    color: var(--color-primary);
+    font-size: 1rem;
+    line-height: 157.143%;
+    letter-spacing: 0.75px;
+  }
+
+  .text-banner {
+    font-size: 1.rem;
+    line-height: 157.143%;
+    letter-spacing: 0.25px;
+  }
+
+  .btn-primary {
+    display: block;
+  }
 }
