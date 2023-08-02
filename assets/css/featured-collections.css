@@ -235,7 +235,10 @@
   position: relative;
 }
 
-@media screen and (min-width: 760px) and (max-width: 992px) {
+
+
+@media screen and (min-width: 790px) and (max-width: 992px) {
+
 
   .featured-collections {
     height: 1200px;
@@ -243,23 +246,102 @@
 
   .featured-collections .title_section {
     text-align: center;
-    margin-right: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .featured-collections_dad {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 100px;
+    margin: 20px 35px;
+  }
+
+  .featured-collections_dad p {
+    width: 40vw;
+    margin-top: 20px;
+  }
+
+  .featured-collections_dad span {
+    margin-top: 45px;
+  
+  }
+
+  .featured-collections_dad a {
+    margin-top: 20px;
+  }
+
+  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+    width: 87vw;
+    background-position: bottom right;
+    background-size: 250px auto;
+
+  }
+
+  .content-container-3 {
+    flex-direction: row;
+    justify-content: center;
+
   }
 
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 375px) and (max-width: 790px) {
+  .featured-collections {
+    height: 1200px;
+  }
+
+  .featured-collections .title_section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-collections_dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px;
+  }
+
+  .featured-collections_dad p {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .featured-collections_dad span {
+    margin-top: 30px;
+  
+  }
+
+  .featured-collections_dad a {
+    margin-top: 20px;
+  }
+
+  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+    width: 90vw;
+    background-position: bottom right;
+    background-size: 250px auto;
+
+  }
+  .container-3 {
+    overflow-x: scroll;
+    height: 420px;
+  }
+
+  .content-container-3 {
+    width: 800px;
+    padding-top: 15px;
+    justify-content: start;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   
 
-  .featured-collections{
-    height: 1400px;
+  .featured-collections {
+    height: 1150px;
   }
 
   .featured-collections .title_section {
@@ -278,7 +360,7 @@
   .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
     width: 338px;
     height: 212px;
-    background-size: 195px 200px;
+    background-size: 195px 210px;
   }
 
   .featured-collections_dad span {
@@ -294,7 +376,16 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .container-3 {
+    overflow-x: scroll;
+    height: 200px;
+  }
+
   .content-container-3 {
-    margin-bottom: 80px;
+    width: 800px;
+    padding-top: 15px;
+    justify-content: start;
+    margin-left: 30px;
   }
 }
