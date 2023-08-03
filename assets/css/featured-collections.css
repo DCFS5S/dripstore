@@ -160,6 +160,10 @@
   letter-spacing: 0.75px;
 }
 
+.icon a:hover {
+  color: #C92071;
+}
+
 .item-shirt {
   background: #fff url(../css/images-sessao-destaque/tshirt.svg) no-repeat center center;
   position: relative;
