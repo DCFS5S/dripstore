@@ -2,7 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
 
 .featured-collections {
   height: 700px;
@@ -86,7 +86,7 @@
   margin: auto;
 }
 
-.featured-collections_son_1 {
+.featured-collections_shirt {
   width: 405px;
   height: 251px;
   border-radius: 8px;
@@ -96,7 +96,7 @@
   background-position: bottom right;
 }
 
-.featured-collections_son_2 {
+.featured-collections_hphone {
   width: 405px;
   height: 251px;
   border-radius: 8px;
@@ -106,7 +106,7 @@
   background-position: bottom right;
   }
 
-.featured-collections_son_3 {
+.featured-collections_shoes {
   width: 405px;
   height: 251px;
   border-radius: 8px;
@@ -116,11 +116,11 @@
   background-position: bottom right;
 }
 
-.featured-collections_son_3 p {
+.featured-collections_hphone p {
   width: 184px;
 }
 
-#destaque-2 {
+#destaque {
   color: #474747;
   font-family: 'Inter';
   margin-top: 100px;
@@ -128,7 +128,7 @@
   text-align: center;
 }
 
-.content-container-3 {
+.content-container-icons {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -160,57 +160,57 @@
   letter-spacing: 0.75px;
 }
 
-.item-4 {
+.item-shirt {
   background: #fff url(../css/images-sessao-destaque/tshirt.svg) no-repeat center center;
   position: relative;
 
 }
 
-.item-4 > a {
+.item-shirt > a {
   position: absolute;
   top: 110px;
   left: 11px;
 } 
 
-.item-5 {
+.item-pants {
   background: #fff url(../css/images-sessao-destaque/pants.svg) no-repeat center center;
   position: relative;
 }
 
-.item-5 > a {
+.item-pants > a {
   position: absolute;
   top: 110px;
   left: 28px;
 }
 
-.item-6 {
+.item-hat {
   background: #fff url(../css/images-sessao-destaque/pants.svg) no-repeat center center;
   position: relative;
 }
 
-.item-6 > a {
+.item-hat > a {
   position: absolute;
   top: 110px;
   left: 30px;
 }
 
-.item-7 {
+.item-hphone {
   background: #fff url(../css/images-sessao-destaque/headphones.svg) no-repeat center center;
   position: relative;
 }
 
-.item-7 > a {
+.item-hphone > a {
   position: absolute;
   top: 110px;
   left: 6px;
 }
 
-.item-8 {
+.item-shoes {
   background: #fff url(../css/images-sessao-destaque/sneakers.svg) no-repeat center center;
   position: relative;
 }
 
-.item-8 > a {
+.item-shoes > a {
   position: absolute;
   top: 110px;
   left: 33px;
@@ -271,14 +271,14 @@
     margin-top: 20px;
   }
 
-  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
     width: 87vw;
     background-position: bottom right;
     background-size: 250px auto;
 
   }
 
-  .content-container-3 {
+  .content-container-icons {
     flex-direction: row;
     justify-content: center;
 
@@ -318,18 +318,18 @@
     margin-top: 20px;
   }
 
-  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
     width: 90vw;
     background-position: bottom right;
     background-size: 250px auto;
 
   }
-  .container-3 {
+  .container-icons {
     overflow-x: scroll;
     height: 420px;
   }
 
-  .content-container-3 {
+  .content-container-icons {
     width: 800px;
     padding-top: 15px;
     justify-content: start;
@@ -357,7 +357,7 @@
     margin: 20px auto;
   }
 
-  .featured-collections_son_1, .featured-collections_son_2, .featured-collections_son_3 {
+  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
     width: 338px;
     height: 212px;
     background-size: 195px 210px;
@@ -377,12 +377,12 @@
     margin-bottom: 10px;
   }
 
-  .container-3 {
+  .container-icons {
     overflow-x: scroll;
     height: 200px;
   }
 
-  .content-container-3 {
+  .content-container-icons {
     width: 800px;
     padding-top: 15px;
     justify-content: start;
