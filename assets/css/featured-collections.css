@@ -85,35 +85,27 @@
   background-color: #C92071;
 }
 
-.box {
+.box_collection {
   margin: auto;
-}
-
-.featured-collections_shirt {
   width: 405px;
   height: 251px;
   border-radius: 8px;
   background: #D8E3F2;
+}
+
+.featured-collections_shirt {
   background-image: url(../css/images-sessao-destaque/camisa-starwars.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
 }
 
 .featured-collections_hphone {
-  width: 405px;
-  height: 251px;
-  border-radius: 8px;
-  background: #D8E3F2;
   background-image: url(../css/images-sessao-destaque/headphone.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
   }
 
 .featured-collections_shoes {
-  width: 405px;
-  height: 251px;
-  border-radius: 8px;
-  background: #D8E3F2;
   background-image: url(../css/images-sessao-destaque/tenis.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
