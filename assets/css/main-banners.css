@@ -88,7 +88,7 @@
 .main-banners .navigation-buttons {
   display: flex;
   justify-content: center;
-  gap: .5em;
+  gap: .5rem;
 }
 
 .main-banners .navigation-buttons span {
