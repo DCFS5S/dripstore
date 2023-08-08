@@ -131,7 +131,7 @@ width: 49px;
 height: 2px;
 }
 
-/* Banner */
+
 .main-banner {
   display: flex;
   margin-top: 124px ;
@@ -139,11 +139,9 @@ height: 2px;
 }
 .main-banner h3 {
   font-size: 16 px;
-  /* color */
+
 }
-.main-banner h2 {
- /*  font-size: ; */
-}
+
 .sneaker-banner {
   width: 733.506px;
 height: 431.606px;
