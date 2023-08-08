@@ -60,3 +60,8 @@
     border-top: 1px solid #FFF5;
     padding: 23px;
 }
+.main-footer .social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 124.12px;
+}
