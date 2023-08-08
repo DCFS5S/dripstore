@@ -3,7 +3,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
-
 .featured-collections {
   height: 700px;
 }
@@ -13,7 +12,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 
 .featured-collections .title_section {
   margin-top: 38px;
@@ -139,7 +137,6 @@
   flex-flow: row wrap;
   position: relative;
   gap: 48px;
-
 }
 
 .icon {
@@ -241,158 +238,153 @@
   position: relative;
 }
 
-
-
 @media screen and (min-width: 790px) and (max-width: 992px) {
 
+.featured-collections {
+  height: 1200px;
+}
 
-  .featured-collections {
-    height: 1200px;
-  }
+.featured-collections .title_section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .featured-collections .title_section {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.featured-collections_dad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 35px;
+}
 
-  .featured-collections_dad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 35px;
-  }
+.featured-collections_dad p {
+  width: 40vw;
+  margin-top: 20px;
+}
 
-  .featured-collections_dad p {
-    width: 40vw;
-    margin-top: 20px;
-  }
+.featured-collections_dad span {
+  margin-top: 45px;
+}
 
-  .featured-collections_dad span {
-    margin-top: 45px;
-  }
+.featured-collections_dad a {
+  margin-top: 20px;
+}
 
-  .featured-collections_dad a {
-    margin-top: 20px;
-  }
+.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+  width: 87vw;
+  background-position: bottom right;
+  background-size: 250px auto;
+}
 
-  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
-    width: 87vw;
-    background-position: bottom right;
-    background-size: 250px auto;
-
-  }
-
-  .content-container-icons {
-    flex-direction: row;
-    justify-content: center;
-  }
+.content-container-icons {
+  flex-direction: row;
+  justify-content: center;
+}
 
 }
 
 @media screen and (min-width: 375px) and (max-width: 790px) {
-  .featured-collections {
-    height: 1200px;
-  }
+.featured-collections {
+  height: 1200px;
+}
 
-  .featured-collections .title_section {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.featured-collections .title_section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .featured-collections_dad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 20px;
-  }
+.featured-collections_dad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 20px;
+}
 
-  .featured-collections_dad p {
-    width: 200px;
-    margin-top: 20px;
-  }
+.featured-collections_dad p {
+  width: 200px;
+  margin-top: 20px;
+}
 
-  .featured-collections_dad span {
-    margin-top: 30px;
-  
-  }
+.featured-collections_dad span {
+  margin-top: 30px; 
+}
 
-  .featured-collections_dad a {
-    margin-top: 20px;
-  }
+.featured-collections_dad a {
+  margin-top: 20px;
+}
 
-  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
-    width: 90vw;
-    background-position: bottom right;
-    background-size: 250px auto;
+.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+  width: 90vw;
+  background-position: bottom right;
+  background-size: 250px auto;
+}
 
-  }
-  .container-icons {
-    overflow-x: scroll;
-    height: 420px;
-  }
+.container-icons {
+  overflow-x: scroll;
+  height: 420px;
+}
 
-  .content-container-icons {
-    width: 800px;
-    padding-top: 15px;
-    justify-content: start;
-    margin-left: 30px;
-  }
+.content-container-icons {
+  width: 800px;
+  padding-top: 15px;
+  justify-content: start;
+  margin-left: 30px;
+}
+
 }
 
 @media screen and (max-width: 375px) {
-  
 
-  .featured-collections {
-    height: 1150px;
-  }
+.featured-collections {
+  height: 1150px;
+}
 
-  .featured-collections .title_section {
-    margin-left: 20px;
-    margin-right: 160px;
-    width: 287px;
-  }
+.featured-collections .title_section {
+  margin-left: 20px;
+  margin-right: 160px;
+  width: 287px;
+}
 
-  .featured-collections_dad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px auto;
-  }
+.featured-collections_dad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+}
 
-  .featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
-    width: 338px;
-    max-width: 300px;
-    height: 212px;
-    background-size: 195px 210px;
-  }
+.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+  width: 338px;
+  max-width: 300px;
+  height: 212px;
+  background-size: 195px 210px;
+}
 
-  .featured-collections_dad span {
-    margin-top: 20px;
-  }
+.featured-collections_dad span {
+  margin-top: 20px;
+}
 
-  .featured-collections_dad p {
-    width: 175px;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.featured-collections_dad p {
+  width: 175px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .container-icons {
-    overflow-x: scroll;
-    height: 200px;
-  }
+.container-icons {
+  overflow-x: scroll;
+  height: 200px;
+}
 
-  .content-container-icons {
-    width: 800px;
-    padding-top: 15px;
-    justify-content: start;
-    margin-left: 30px;
-  }
+.content-container-icons {
+  width: 800px;
+  padding-top: 15px;
+  justify-content: start;
+  margin-left: 30px;
+}
 
 }
