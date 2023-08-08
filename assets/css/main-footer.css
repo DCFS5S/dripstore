@@ -11,16 +11,16 @@
   font-family: 'Inter';
   flex-wrap: wrap;
 }
-.main-footer #footer1{
+.main-footer #footer-logo{
   margin-right: 205px;
   width: 25%;
 }
-.main-footer #footer1 h2 {
+.main-footer #footer-logo h2 {
   font-weight: 600;
   font-size: 36.395px;
   margin-bottom: 35px;
 }
-.main-footer #footer1 p {
+.main-footer #footer-logo p {
   margin-bottom: 40px;
 }
 .main-footer .information {
@@ -29,7 +29,6 @@
   margin-bottom: 28px;
   font-weight: 400;
   margin-right: 102px;
-
 }
 .main-footer .information a {
   text-decoration: none;
