@@ -1,4 +1,83 @@
+.featured-products * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .featured-products {
-  background-color: blue;
-  height: 200px;
+  background-color: #f9f8fE;
+  font-family: 'Inter', sans-serif;
+  padding: 120px 100px;
+}
+
+.featured-products .legend {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.featured-products .legend a {
+  color: #C92071;
+  text-decoration: none;
+}
+
+.featured-products .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.featured-products .container .product {
+  min-width: 200px;
+  width: calc((100% - 80px) / 4);
+  max-width: 360px;
+  position: relative;
+}
+
+.featured-products .container .product img {
+  aspect-ratio: 9/10;
+  width: 100%;
+  object-fit: contain;
+  background-color: #fff;
+  margin-bottom: 18px;
+}
+
+.featured-products .container .product .category {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+
+.featured-products .container .product .product-description {
+  color: #474747;
+  font-size: 24px;
+  margin-block: 7px;
+}
+
+.featured-products .container .product .price {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.featured-products .container .product .price .old-price {
+  text-decoration: line-through;
+  color: #8F8F8F;
+  font-weight: 400;
+}
+
+.featured-products .pill {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 29px;
+  background: #E7FF86;
+  color: #474747;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
