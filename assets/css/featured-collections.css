@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-.featured-collections .title_section {
+.featured-collections .title-section {
   margin-top: 38px;
   margin-left: 100px;
   color: var(--dark-gray-2, #474747);
@@ -26,13 +26,13 @@
   flex-direction: column;
 }
 
-.featured-collections_dad {
+.featured-collections-dad {
   display: flex;
   margin: 20px 100px;
   gap: 12px;
 }
 
-.featured-collections_dad span {
+.featured-collections-dad span {
   display: inline-flex;
   font-family: 'Inter';
   font-size: 14px;
@@ -46,7 +46,7 @@
   background: #E7FF86;
 }
 
-.featured-collections_dad p {
+.featured-collections-dad p {
   color: var(--dark-gray, #1F1F1F);
   width: 172px;
   margin-top: 10px;
@@ -59,7 +59,7 @@
   letter-spacing: 1px;
 }
 
-.featured-collections_dad a {
+.featured-collections-dad a {
   text-decoration: none;
   display: flex;
   width: 153px;
@@ -80,12 +80,12 @@
   letter-spacing: 0.75px;
 }
 
-.featured-collections_dad a:hover {
+.featured-collections-dad a:hover {
   color: #fff;
   background-color: #C92071;
 }
 
-.box_collection {
+.box-collection {
   margin: auto;
   width: 405px;
   height: 251px;
@@ -93,29 +93,29 @@
   background: #D8E3F2;
 }
 
-.featured-collections_shirt {
+.featured-collections-shirt {
   background-image: url(../css/images-sessao-destaque/camisa-starwars.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
 }
 
-.featured-collections_hphone {
+.featured-collections-headphone {
   background-image: url(../css/images-sessao-destaque/headphone.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
   }
 
-.featured-collections_shoes {
+.featured-collections-shoes {
   background-image: url(../css/images-sessao-destaque/tenis.png);
   background-repeat: no-repeat; 
   background-position: bottom right;
 }
 
-.featured-collections_hphone p {
+.featured-collections-headphone p {
   width: 184px;
 }
 
-#destaque {
+#highlight {
   color: #474747;
   font-family: 'Inter';
   margin-top: 100px;
@@ -189,12 +189,12 @@
   left: 30px;
 }
 
-.item-hphone {
+.item-headphone {
   background: #fff url(../css/images-sessao-destaque/headphones.svg) no-repeat center center;
   position: relative;
 }
 
-.item-hphone > a {
+.item-headphone > a {
   position: absolute;
   top: 110px;
   left: 6px;
@@ -236,33 +236,33 @@
   height: 1200px;
 }
 
-.featured-collections .title_section {
+.featured-collections .title-section {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.featured-collections_dad {
+.featured-collections-dad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px 35px;
 }
 
-.featured-collections_dad p {
+.featured-collections-dad p {
   width: 40vw;
   margin-top: 20px;
 }
 
-.featured-collections_dad span {
+.featured-collections-dad span {
   margin-top: 45px;
 }
 
-.featured-collections_dad a {
+.featured-collections-dad a {
   margin-top: 20px;
 }
 
-.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+.featured-collections-shirt, .featured-collections-shoes, .featured-collections-headphone {
   width: 87vw;
   background-position: bottom right;
   background-size: 250px auto;
@@ -280,33 +280,33 @@
   height: 1200px;
 }
 
-.featured-collections .title_section {
+.featured-collections .title-section {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.featured-collections_dad {
+.featured-collections-dad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px 20px;
 }
 
-.featured-collections_dad p {
+.featured-collections-dad p {
   width: 200px;
   margin-top: 20px;
 }
 
-.featured-collections_dad span {
+.featured-collections-dad span {
   margin-top: 30px; 
 }
 
-.featured-collections_dad a {
+.featured-collections-dad a {
   margin-top: 20px;
 }
 
-.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+.featured-collections-shirt, .featured-collections-shoes, .featured-collections-headphone {
   width: 90vw;
   background-position: bottom right;
   background-size: 250px auto;
@@ -332,31 +332,31 @@
   height: 1150px;
 }
 
-.featured-collections .title_section {
+.featured-collections .title-section {
   margin-left: 20px;
   margin-right: 160px;
   width: 287px;
 }
 
-.featured-collections_dad {
+.featured-collections-dad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px auto;
 }
 
-.featured-collections_shirt, .featured-collections_shoes, .featured-collections_hphone {
+.featured-collections-shirt, .featured-collections-shoes, .featured-collections-headphone {
   width: 338px;
   max-width: 300px;
   height: 212px;
   background-size: 195px 210px;
 }
 
-.featured-collections_dad span {
+.featured-collections-dad span {
   margin-top: 20px;
 }
 
-.featured-collections_dad p {
+.featured-collections-dad p {
   width: 175px;
   font-size: 28px;
   font-style: normal;
