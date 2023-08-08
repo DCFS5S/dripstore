@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
-
 :root {
   --color-primary: #C92071;
   --color-primary-dark: #991956;
@@ -10,12 +8,6 @@
   --color-light-gray-3: #F5F5F5;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .main-banners {
   font-family: 'Inter', sans-serif;
   background: var(--color-light-gray-3);
@@ -23,32 +15,32 @@
   overflow: hidden;
 }
 
-.ornament {
+.main-banners .ornament {
   position: absolute;
   right: -3rem;
   top: 0;
 }
 
-.container {
+.main-banners .container {
   max-width: 1240px;
   margin: auto;
 }
 
-.carousel {
+.main-banners .carousel {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.col-1 {
+.main-banners .col-1 {
   width: 45%;
 }
 
-.col-2 {
+.main-banners .col-2 {
   width: 50%;
 }
 
-.title-banner {
+.main-banners .title-banner {
   color: var(--color-dark-gray);
   font-size: 4rem;
   font-weight: 800;
@@ -57,7 +49,7 @@
   margin: 1.25rem 0;
 }
 
-.text-small-banner {
+.main-banners .text-small-banner {
   color: var(--color-warning);
   font-size: 1rem;
   font-weight: 700;
@@ -65,7 +57,7 @@
   letter-spacing: 0.75px;
 }
 
-.text-banner {
+.main-banners .text-banner {
   color: var(--color-dark-gray-2);
   font-family: Inter;
   font-size: 1.125rem;
@@ -74,7 +66,7 @@
   letter-spacing: 0.75px;
 }
 
-.img-banner img {
+.main-banners .img-banner img {
   width: 100%;
   animation: floating 3s ease-in-out infinite
 }
@@ -93,13 +85,13 @@
   }
 }
 
-.navigation-buttons {
+.main-banners .navigation-buttons {
   display: flex;
   justify-content: center;
   gap: .5em;
 }
 
-.navigation-buttons span {
+.main-banners .navigation-buttons span {
   background-color: var(--color-light-gray-2);
   border-radius: 50%;
   width: 12px;
@@ -107,11 +99,11 @@
   cursor: pointer;
 }
 
-.navigation-buttons span.active {
+.main-banners .navigation-buttons span.active {
   background-color: var(--color-primary);
 }
 
-.btn-primary {
+.main-banners .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-light-gray-3);
   font-size: 1rem;
@@ -125,11 +117,11 @@
   transition: 3ms;
 }
 
-.btn-primary:hover {
+.main-banners .btn-primary:hover {
   background-color: var(--color-primary-dark);
 }
 
-.mt-40 {
+.main-banners .mt-40 {
   margin-top: 2.5rem;
 }
 
@@ -139,33 +131,33 @@
     padding: 5rem 2rem 3rem 2rem;
   }
 
-  .ornament {
+  .main-banners .ornament {
     right: -5rem;
   }
 
-  .container {
+  .main-banners .container {
     max-width: 90%;
     margin: auto;
   }
 
-  .col-1 {
+  .main-banners .col-1 {
     width: 50%;
   }
 
-  .title-banner {
+  .main-banners .title-banner {
     font-size: 2.5rem;
     line-height: 125%;
     letter-spacing: 1px;
   }
 
-  .text-small-banner {
+  .main-banners .text-small-banner {
     color: var(--color-primary);
     font-size: 1rem;
     line-height: 157.143%;
     letter-spacing: 0.75px;
   }
 
-  .text-banner {
+  .main-banners .text-banner {
     font-size: 1.rem;
     line-height: 157.143%;
     letter-spacing: 0.25px;
@@ -178,16 +170,16 @@
     padding: 5rem 1.25rem 3rem 1.25rem;
   }
 
-  .ornament {
+  .main-banners .ornament {
     right: -5rem;
   }
 
-  .container {
+  .main-banners .container {
     max-width: 100%;
     margin: auto;
   }
 
-  .carousel {
+  .main-banners .carousel {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
@@ -195,34 +187,34 @@
     text-align: center;
   }
 
-  .col-1 {
+  .main-banners .col-1 {
     width: 100%;
   }
 
-  .col-2 {
+  .main-banners .col-2 {
     width: 80%;
   }
 
-  .title-banner {
+  .main-banners .title-banner {
     font-size: 2.5rem;
     line-height: 125%;
     letter-spacing: 1px;
   }
 
-  .text-small-banner {
+  .main-banners .text-small-banner {
     color: var(--color-primary);
     font-size: 1rem;
     line-height: 157.143%;
     letter-spacing: 0.75px;
   }
 
-  .text-banner {
+  .main-banners .text-banner {
     font-size: 1.rem;
     line-height: 157.143%;
     letter-spacing: 0.25px;
   }
 
-  .btn-primary {
+  .main-banners .btn-primary {
     display: block;
   }
 }
