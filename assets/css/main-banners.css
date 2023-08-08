@@ -214,6 +214,10 @@
     letter-spacing: 0.25px;
   }
 
+  .main-banners .img-banner {
+    min-width: 300px;
+  }
+
   .main-banners .btn-primary {
     display: block;
   }
