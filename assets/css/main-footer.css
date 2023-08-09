@@ -11,16 +11,16 @@
   font-family: 'Inter';
   flex-wrap: wrap;
 }
-.main-footer #footer-logo{
+.main-footer .footer-social{
   margin-right: 205px;
   width: 25%;
 }
-.main-footer #footer-logo h2 {
+.main-footer .footer-social h2 {
   font-weight: 600;
   font-size: 36.395px;
   margin-bottom: 35px;
 }
-.main-footer #footer-logo p {
+.main-footer .footer-social p {
   margin-bottom: 40px;
 }
 .main-footer .information {
