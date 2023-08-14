@@ -230,6 +230,16 @@
   position: relative;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1350px) {
+  .featured-collections-dad p {
+    font-size: 25px;
+  }
+
+  .featured-collections-dad .featured-collections-shirt, .featured-collections-shoes,.featured-collections-headphone {
+    background-size: auto 18vw;
+  }
+}
+
 @media screen and (min-width: 790px) and (max-width: 992px) {
 
 .featured-collections {
@@ -314,7 +324,7 @@
 
 .container-icons {
   overflow-x: scroll;
-  height: 420px;
+  height: 200px;
 }
 
 .content-container-icons {
@@ -329,7 +339,7 @@
 @media screen and (max-width: 375px) {
 
 .featured-collections {
-  height: 1150px;
+  height: 1100px;
 }
 
 .featured-collections .title-section {
