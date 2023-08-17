@@ -1,4 +1,50 @@
 .special-offer {
-  background-color: purple;
-  height: 200px;
+  background-color: white;
+  display: flex;
+}
+
+.special-offer .left-side-container {
+  border: 1px solid red;
+  width: 573px;
+  height: 330px;
+  flex-shrink: 0;
+}
+
+.special-offer .right-side-container {
+  border: 1px solid blue;
+}
+
+.special-offer .right-side-container h3 {
+  color: #C92071;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+}
+
+.special-offer .right-side-container h4 {
+  color: #474747;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.special-offer .right-side-container p {
+  color: #474747;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+}
+
+.special-offer .right-side-container button {
+  width: 200px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #C92071;
+  font-style: normal;
 }
