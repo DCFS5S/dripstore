@@ -1,0 +1,14 @@
+.productPill {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 29px;
+    background: #E7FF86;
+    color: #474747;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
