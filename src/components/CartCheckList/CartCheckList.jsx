@@ -1,8 +1,7 @@
 import './CartCheckList.css'
 
-function CartCheckList() {
+export function CartCheckList() {
     return (
-        <>
         <div className='container'>
             <div className='menu'>
                 <ul>
@@ -25,9 +24,7 @@ function CartCheckList() {
                 </div>
             </div>
         </div>
-        </>
     )
 }
 
 
-export default CartCheckList

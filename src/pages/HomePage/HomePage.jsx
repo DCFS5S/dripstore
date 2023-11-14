@@ -1,6 +1,6 @@
-import CartCheckList from "../../components/CartCheckList/CartCheckList"
+import { CartCheckList } from "../../components/CartCheckList/CartCheckList"
 
-function HomePage() {
+export function HomePage() {
     return (
       <>
         <CartCheckList />
@@ -8,4 +8,3 @@ function HomePage() {
     )
   }
   
-export default HomePage
