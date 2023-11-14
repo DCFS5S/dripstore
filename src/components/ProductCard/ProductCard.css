@@ -1,5 +1,5 @@
 .productCard {
-    min-width: 200px;
+    /* min-width: 180px; */
     width: calc((100% - 80px) / 4);
     max-width: 360px;
     position: relative;
@@ -23,4 +23,16 @@
     color: #474747;
     font-size: 24px;
     margin-block: 7px;
+}
+
+@media screen and (max-width: 1090px) {
+    .productCard {
+        width: calc((100% - 80px) / 3);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .productCard {
+        width: 45%;
+    }
 }
