@@ -1,0 +1,14 @@
+thead th {
+    border-bottom: 1px solid lightgray;
+}
+
+.old-price {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
