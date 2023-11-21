@@ -5,7 +5,9 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
     const [a, setA] = useState(1)
 
     const handleMinusClick = () => {
-        setA(a - 1)
+        if(a > 0) {
+            setA(a - 1)
+        }
     }
 
     const handlePlusClick = () => {
