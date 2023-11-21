@@ -16,7 +16,6 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
         alert(a)
     }
 
-
     return (
         <div>
             <table>

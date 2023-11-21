@@ -3,6 +3,15 @@ thead th {
    padding: 20px 20px;
 }
 
+a {
+    color: rgb(138, 138, 138);
+}
+
+span {
+    padding: 10px;
+    font-size: 12px;
+}
+
 .old-price {
     color: lightgray;
     text-decoration: line-through;
@@ -21,7 +30,5 @@ thead th {
     font-weight: bold;
 }
 
-a {
-    color: rgb(138, 138, 138);
-}
+
 
