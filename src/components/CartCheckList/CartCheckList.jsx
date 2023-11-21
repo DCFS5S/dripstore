@@ -15,15 +15,15 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                     <tr>
                         <td rowSpan={3}><img className='image' src="../public/images/tenis.png" alt="" /></td>
                         <td>{name}</td>
-                        <td>+ / -</td>
-                        <td className='old-price'>{oldPrice}</td>
-                        <td className='old-price'>{oldPrice}</td>
+                        <td className='center'>+ / -</td>
+                        <td className='old-price center' >{oldPrice}</td>
+                        <td className='old-price center'>{oldPrice}</td>
                     </tr>
                     <tr>
                         <td>Cor: {color}</td>
-                        <td>Remover item</td>
-                        <td>{price}</td>
-                        <td>{price}</td>
+                        <td className='center'><a href="">Remover item</a></td>
+                        <td className='center'>{price}</td>
+                        <td className='center'>{price}</td>
                     </tr>
                     <tr>
                         <td>Tamanho: {size}</td>
