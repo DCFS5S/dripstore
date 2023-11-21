@@ -1,6 +1,6 @@
 import './CartCheckList.css'
 
-export function CartCheckList(props) {
+export function CartCheckList({name, color, size, price, oldPrice}) {
     return (
         <div>
             <table>
@@ -14,19 +14,19 @@ export function CartCheckList(props) {
                 <tbody>
                     <tr>
                         <td rowSpan={3}><img className='image' src="../public/images/tenis.png" alt="" /></td>
-                        <td>Tênis Nike Revolution 6 Next Nature Masculino</td>
+                        <td>{name}</td>
                         <td>+ / -</td>
-                        <td className='old-price'>R$ 219,00</td>
-                        <td className='old-price'>R$ 219,00</td>
+                        <td className='old-price'>{oldPrice}</td>
+                        <td className='old-price'>{oldPrice}}0</td>
                     </tr>
                     <tr>
-                        <td>Cor: Vermelho / Branco</td>
+                        <td>Cor: {color}</td>
                         <td>Remover item</td>
-                        <td>R$ 219,00</td>
-                        <td>R$ 219,00</td>
+                        <td>{price}</td>
+                        <td>{price}</td>
                     </tr>
                     <tr>
-                        <td>Tamanho: 42</td>
+                        <td>Tamanho: {size}</td>
                         <td></td>
                         <td></td>
                         <td></td>
