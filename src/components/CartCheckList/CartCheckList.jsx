@@ -17,7 +17,7 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         <td>{name}</td>
                         <td>+ / -</td>
                         <td className='old-price'>{oldPrice}</td>
-                        <td className='old-price'>{oldPrice}}0</td>
+                        <td className='old-price'>{oldPrice}</td>
                     </tr>
                     <tr>
                         <td>Cor: {color}</td>

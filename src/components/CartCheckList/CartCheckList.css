@@ -1,5 +1,6 @@
 thead th {
     border-bottom: 1px solid lightgray;
+   padding: 20px 20px;
 }
 
 .old-price {
