@@ -1,6 +1,22 @@
 import './CartCheckList.css'
+import { useState } from 'react'
 
 export function CartCheckList({name, color, size, price, oldPrice}) {
+    const [a, setA] = useState(1)
+
+    const handleMinusClick = () => {
+        setA(a - 1)
+    }
+
+    const handlePlusClick = () => {
+        setA(a + 1)
+    }
+
+    const showVariable = () => {
+        alert(a)
+    }
+
+
     return (
         <div>
             <table>
@@ -15,7 +31,10 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                     <tr>
                         <td rowSpan={3}><img className='image' src="../images/tenis.png" alt="" /></td>
                         <td className='bold'>{name}</td>
-                        <td className='center'>+ / -</td>
+                        <td className='center'>
+                            <button onClick={handleMinusClick}>-</button> 
+                            <span onClick={showVariable}> {a} </span>
+                            <button onClick={handlePlusClick}>+</button></td>
                         <td className='old-price center' >{oldPrice}</td>
                         <td className='old-price center'>{oldPrice}</td>
                     </tr>
