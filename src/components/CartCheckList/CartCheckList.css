@@ -8,6 +8,14 @@ th.bold {
     font-weight: bold;
 }
 
+td.gray {
+    color: gray;
+}
+
+span.black {
+    color: black;
+}
+
 a {
     color: rgb(138, 138, 138);
     font-size: 12px;
@@ -21,7 +29,7 @@ button {
     font-size: 14px;
 }
 
-span {
+span.show-variable {
     padding: 10px;
     font-size: 12px;
 }
