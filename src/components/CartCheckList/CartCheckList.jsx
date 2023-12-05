@@ -36,16 +36,24 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                             <button onClick={handleMinusClick}>-</button> 
                             <span className='show-variable' onClick={showVariable}> {quantidade} </span>
                             <button onClick={handlePlusClick}>+</button></td>
-                        <td className='old-price center' >{oldPrice}</td>
-                        <td className='old-price center'>{oldPrice}</td>
+                        <td className='old-price center' >
+                            R$ <span>{oldPrice}</span>
+                        </td>
+                        <td className='old-price center'>
+                            R$ <span>{oldPrice}</span>
+                        </td>
                     </tr>
                     <tr>
                         <td className='gray'>
                             Cor: <span className='black'>{color}</span>
                         </td>
                         <td className='center'><a href="#">Remover item</a></td>
-                        <td className='center bold'>{price}</td>
-                        <td className='center bold'>{price}</td>
+                        <td className='center bold'>
+                            R$ <span>{oldPrice}</span>
+                        </td>
+                        <td className='center bold'>
+                            R$ <span>{oldPrice}</span>
+                        </td>
                     </tr>
                     <tr>
                         <td className='gray'>
