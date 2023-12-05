@@ -1,6 +1,11 @@
 thead th {
     border-bottom: 1px solid lightgray;
     padding: 15px 20px;
+    font-weight: normal;
+}
+
+th.bold {
+    font-weight: bold;
 }
 
 a {
