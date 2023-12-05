@@ -47,7 +47,9 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         <td className='gray'>
                             Cor: <span className='black'>{color}</span>
                         </td>
-                        <td className='center'><a href="#">Remover item</a></td>
+                        <td className='center'>
+                            <a href="#">Remover item</a>
+                        </td>
                         <td className='center bold'>
                             R$ <span>{oldPrice}</span>
                         </td>
