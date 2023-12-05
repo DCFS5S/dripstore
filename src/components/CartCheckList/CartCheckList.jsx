@@ -2,20 +2,20 @@ import './CartCheckList.css'
 import { useState } from 'react'
 
 export function CartCheckList({name, color, size, price, oldPrice}) {
-    const [a, setA] = useState(1)
+    const [quantidade, setQuantidade] = useState(1)
 
     const handleMinusClick = () => {
-        if(a > 0) {
-            setA(a - 1)
+        if(quantidade > 0) {
+            setQuantidade(quantidade - 1)
         }
     }
 
     const handlePlusClick = () => {
-        setA(a + 1)
+        setQuantidade(quantidade + 1)
     }
 
     const showVariable = () => {
-        alert(a)
+        alert(quantidade)
     }
 
     return (
@@ -34,7 +34,7 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         <td className='bold'>{name}</td>
                         <td className='center'>
                             <button onClick={handleMinusClick}>-</button> 
-                            <span className='show-variable' onClick={showVariable}> {a} </span>
+                            <span className='show-variable' onClick={showVariable}> {quantidade} </span>
                             <button onClick={handlePlusClick}>+</button></td>
                         <td className='old-price center' >{oldPrice}</td>
                         <td className='old-price center'>{oldPrice}</td>
