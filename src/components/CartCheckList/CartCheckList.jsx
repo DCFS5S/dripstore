@@ -23,7 +23,7 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
             <table>
                 <thead>
                     <th>MEU CARRINHO</th>
-                    <th></th>
+                    <th/>
                     <th>QUANTIDADE</th>
                     <th>UNITÁRIO</th>
                     <th>TOTAL</th>
@@ -57,5 +57,3 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
         
     )
 }
-
-
