@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+body {
+    font-family: Inter;
+}
+
 thead th {
     border-bottom: 1px solid lightgray;
     padding: 15px 20px;
@@ -7,8 +11,20 @@ thead th {
     color: #1F1F1F;
 }
 
+.thead {
+    color: var(--dark-gray-2, #474747);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.75px;
+}
+
 th.bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 td.gray {
@@ -37,6 +53,39 @@ span.show-variable {
     font-size: 12px;
 }
 
+.name {
+    color: var(--dark-gray, #1F1F1F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+}
+
+.cor {
+    color: var(--light-gray, #8F8F8F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.25px;
+}
+
+.tamanho {
+    color: var(--light-gray, #8F8F8F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.25px;
+}
+
 .old-price {
     color: #CCCCCC;
     font-family: Inter;
@@ -61,6 +110,18 @@ span.show-variable {
 .image {
     width: 100px;
     height: 100px;
+}
+
+.remove {
+    color: var(--dark-gray-2, #474747);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-decoration-line: underline;
 }
 
 .center {
