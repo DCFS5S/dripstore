@@ -49,8 +49,16 @@ button {
 }
 
 span.show-variable {
+    color: var(--dark-gray-2, #474747);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 11.6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.5px; 
+    letter-spacing: 0.547px;
     padding: 10px;
-    font-size: 12px;
 }
 
 .name {
