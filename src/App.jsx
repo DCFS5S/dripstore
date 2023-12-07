@@ -1,11 +1,9 @@
-import React from "react"
-import { OfferCard } from "./components/OfferCard"
+import './App.css'
+import React from 'react'
+import { HomePage } from './pages/HomePage/HomePage'
 
-
-export const App = () => {
-    return(
-        <>
-            <OfferCard />
-        </>
-    )
+export function App() {
+  return (
+      <HomePage />
+  )
 }
