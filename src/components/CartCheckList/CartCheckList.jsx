@@ -44,8 +44,8 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         </td>
                     </tr>
                     <tr>
-                        <td className='cor gray'>
-                            Cor: <span className='black'>{color}</span>
+                        <td className='cor light-gray'>
+                            Cor: <span className='dark-gray'>{color}</span>
                         </td>
                         <td className='remove center'>
                             <a href="#">Remover item</a>
@@ -58,8 +58,8 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         </td>
                     </tr>
                     <tr>
-                        <td className='tamanho gray'>
-                            Tamanho: <span className='black'>{size}</span>
+                        <td className='tamanho light-gray'>
+                            Tamanho: <span className='dark-gray'>{size}</span>
                         </td>
                         <td></td>
                         <td></td>

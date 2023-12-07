@@ -27,12 +27,12 @@ th.bold {
     font-weight: 700;
 }
 
-td.gray {
-    color: gray;
+td.light-gray {
+    color: #8F8F8F;
 }
 
-span.black {
-    color: black;
+span.dark-gray {
+    color: #1F1F1F;
 }
 
 a {
