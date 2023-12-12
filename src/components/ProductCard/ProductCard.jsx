@@ -1,10 +1,13 @@
+import { useAddToCart } from '../../services/useAddToCart'
 import { DiscountPill } from './DiscountPill/DiscountPill'
 import { Price } from './Price/Price'
 import './ProductCard.css'
 
 export const ProductCard = ({product}) => {
+    const { addToCart } = useAddToCart()
+
     return (
-        <div className="productCard">
+        <div className="productCard" onClick={() => addToCart(product.id)}>
             {product.discount ? <DiscountPill discount={product.discount} /> : ''}
             <img src={product.imgSrc} />
             <span className="category">{product.category}</span>
