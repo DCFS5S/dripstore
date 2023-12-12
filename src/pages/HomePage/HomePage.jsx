@@ -1,10 +1,13 @@
 
+import { useEffect, useState } from 'react';
 import { OfferCard } from '../../components/OfferCard/OfferCard'
 import { ProductList } from "../../components/ProductList/ProductList";
-import productsData from "../../../products.json"
 import "./HomePage.css";
+import { useProductList } from '../../services/useProductList';
 
 export const HomePage = () => {
+ const { products } = useProductList()
+
   return (
     <>
       <section className="product-list">
@@ -14,7 +17,7 @@ export const HomePage = () => {
             <a href="/produtos">Ver todos →</a>
           </div>
           <div className="product-card-list">
-            <ProductList products={productsData} />
+            <ProductList products={products} />
           </div>
         </div>
       </section>
