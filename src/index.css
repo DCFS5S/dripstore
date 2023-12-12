@@ -1,0 +1,35 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-primary: #C92071;
+  --color-primary-dark: #991956;
+  --color-warning: #F6AA1C;
+  --color-dark-gray: #1F1F1F;
+  --color-dark-gray-2: #474747;
+  --color-light-gray-2: #CCCCCC;
+  --color-light-gray-3: #F5F5F5;
+}
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 2em 0;
+}
+
+.d-flex {
+  display: flex;
+}
