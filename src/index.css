@@ -24,6 +24,12 @@
   padding: 0;
 }
 
+#root {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   max-width: 80%;
   margin: auto;
