@@ -1,5 +1,4 @@
 .productCard {
-    /* min-width: 180px; */
     width: calc((100% - 80px) / 4);
     max-width: 360px;
     position: relative;
@@ -9,8 +8,8 @@
     aspect-ratio: 9/10;
     width: 100%;
     object-fit: contain;
-    background-color: #fff;
-    margin-bottom: 18px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
 }
 
 .category {

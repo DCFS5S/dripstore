@@ -4,7 +4,7 @@ export const OfferCard = () => {
     return (
         <section className='product-card'>
             <div className='img'>
-                <img src="/img/nike.png" alt="nike" />
+                <img src="/img/nike.png" alt="Tênis Nike" />
             </div>
             
             <div className='mainText'>
