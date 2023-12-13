@@ -22,16 +22,16 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
         <div>
             <table>
                 <thead>
-                    <th className='bold'>MEU CARRINHO</th>
+                    <th className='thead bold'>MEU CARRINHO</th>
                     <th/>
-                    <th>QUANTIDADE</th>
-                    <th>UNITÁRIO</th>
-                    <th>TOTAL</th>
+                    <th className='thead'>QUANTIDADE</th>
+                    <th className='thead'>UNITÁRIO</th>
+                    <th className='thead'>TOTAL</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td rowSpan={3}><img className='image' src="../images/tenis.png" alt="" /></td>
-                        <td className='bold'>{name}</td>
+                        <td className='name bold'>{name}</td>
                         <td className='center'>
                             <button onClick={handleMinusClick}>-</button> 
                             <span className='show-variable' onClick={showVariable}> {quantidade} </span>
@@ -44,10 +44,10 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         </td>
                     </tr>
                     <tr>
-                        <td className='gray'>
-                            Cor: <span className='black'>{color}</span>
+                        <td className='cor light-gray'>
+                            Cor: <span className='dark-gray'>{color}</span>
                         </td>
-                        <td className='center'>
+                        <td className='remove center'>
                             <a href="#">Remover item</a>
                         </td>
                         <td className='price center bold'>
@@ -58,8 +58,8 @@ export function CartCheckList({name, color, size, price, oldPrice}) {
                         </td>
                     </tr>
                     <tr>
-                        <td className='gray'>
-                            Tamanho: <span className='black'>{size}</span>
+                        <td className='tamanho light-gray'>
+                            Tamanho: <span className='dark-gray'>{size}</span>
                         </td>
                         <td></td>
                         <td></td>
