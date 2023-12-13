@@ -17,7 +17,7 @@ export const HomePage = () => {
             <a href="/produtos">Ver todos →</a>
           </div>
           <div className="product-card-list">
-            <ProductList products={products} />
+            <ProductList products={ products } />
           </div>
         </div>
       </section>

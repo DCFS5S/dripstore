@@ -10,7 +10,7 @@ export const Price = ({ price, discount }) => {
       ) : (
         ""
       )}
-       &nbsp;${price}
+       &nbsp;${ price }
     </span>
   );
 };

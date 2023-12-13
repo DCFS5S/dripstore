@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 thead th {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #d3d3d3;
     padding: 15px 20px;
     font-weight: normal;
     color: #1F1F1F;
@@ -12,21 +12,21 @@ th.bold {
 }
 
 td.gray {
-    color: gray;
+    color: #808080;
 }
 
 span.black {
-    color: black;
+    color: #000000;
 }
 
 a {
-    color: rgb(138, 138, 138);
+    color: #8a8a8a;
     font-size: 12px;
 }
 
 button {
-    background-color: white;
-    border: .7px solid lightgray;
+    background-color: #ffffff;
+    border: .7px solid #d3d3d3;
     border-radius: 2px;
     padding: 7px 12px;
     font-size: 14px;
@@ -41,7 +41,6 @@ span.show-variable {
     color: #CCCCCC;
     font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28px; 
     letter-spacing: 0.75px;
@@ -52,13 +51,13 @@ span.show-variable {
     color: #474747;
     font-family: Inter;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.75px;
 }
 
 .image {
+    padding: 10px;
     width: 100px;
     height: 100px;
 }
@@ -70,6 +69,3 @@ span.show-variable {
 .bold {
     font-weight: bold;
 }
-
-
-

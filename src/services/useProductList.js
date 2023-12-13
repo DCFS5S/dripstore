@@ -22,7 +22,6 @@ export const useProductList = () => {
       loadProducts()
     }, [])
     
-
     return {
         products, productsError, productsLoading
     }

@@ -40,9 +40,10 @@
 }
 
 .mainText button {
+    cursor: pointer;
     margin-top: 20px;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     width: 180px;
     height: 40px;
     border: none;
