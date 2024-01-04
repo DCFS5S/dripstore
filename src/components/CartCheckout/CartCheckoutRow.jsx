@@ -48,7 +48,7 @@ export const CartCheckoutRow = ({ ID, name, color, size, price, oldPrice, onRemo
                     Cor: <span className='black'>{color}</span>
                 </td>
                 <td className='center'>
-                    <button onClick={handleRemoveItem}>Remover item</button>
+                    <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
                 </td>
                 <td className='price center bold'>
                     R$ <span>{price}</span>
