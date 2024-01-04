@@ -6,7 +6,8 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
-import { CartCheckList } from './components/CartCheckList/CartCheckList'
+import { CartCheckout } from './components/CartCheckout/CartCheckout'
+import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 
 const router = createBrowserRouter([
   {
@@ -15,14 +16,12 @@ const router = createBrowserRouter([
   },
   {
     path: '/carrinho',
-    element: <CartCheckList
-      name="Tênis Nike Revolution 6 Next Nature Masculino"
-      color="Vermelho / Branco"
-      size="42"
-      price="219,00"
-      oldPrice="219,00"
-    />,
+    element: <CartCheckout />,
   },
+  {
+    path: '/produto/:id',
+    element: <ProductDetails />
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
