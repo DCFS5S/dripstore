@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Tenis",
+    "discount": 30,
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 200
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 100
+  },
+  {
+    "category": "Tenis",
+    "discount": 20,
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 100
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 100
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 100
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 300
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 300
+  },
+  {
+    "category": "Tenis",
+    "imgSrc": "/assets/img/featured-product.png",
+    "name": "K-Swiss V8 - Masculino",
+    "price": 300
+  }
+]

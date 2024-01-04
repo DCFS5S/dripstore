@@ -9,7 +9,7 @@
     line-height: normal;
 }
 
-.MainFooter .column-1 {
+.MainFooter .footer-colum-digital {
     color:#FFF;
     font-family: Inter;
     font-style: normal;
@@ -19,25 +19,25 @@
     width: 307px;
 }
 
-.MainFooter .column-1 h3 {
+.MainFooter .footer-colum-digital h3 {
     font-size: 36.395px;
     font-weight: 600;
     letter-spacing: -0.364px;
     margin-bottom: 35px;
 }
 
-.MainFooter .column-1 h3 img {
+.MainFooter .footer-colum-digital h3 img {
     margin-right: 8px;
 }
 
-.MainFooter .column-1 p {
+.MainFooter .footer-colum-digital p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 40px;
 }
 
-.MainFooter .column-1 a {
+.MainFooter .footer-colum-digital a {
     width: 124.122px;
     height: 20.534px;
 }
@@ -46,7 +46,7 @@
     display: flex;
 }
 
-.MainFooter .column-2 {
+.MainFooter .footer-colum-informacao {
     color:#FFF;
     font-family: Inter;
     margin-left: 205px;
@@ -55,19 +55,19 @@
     width: 137px;
 }
 
-.MainFooter .column-2 h4 {
+.MainFooter .footer-colum-informacao h4 {
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 28px;
 }
 
-.MainFooter .column-2 ul {
+.MainFooter .footer-colum-informacao ul {
     max-height: 228px;
     text-decoration: none;
 }
 
-.MainFooter .column-2 ul li {
+.MainFooter .footer-colum-informacao ul li {
     font-size: 16px;
     font-weight: 400;
     line-height: 38px;
@@ -75,40 +75,40 @@
     text-decoration: none;
 }
 
-.MainFooter .column-2 ul li a{
+.MainFooter .footer-colum-informacao ul li a{
     color: #FFF;
     text-decoration: none;
 }
 
-.MainFooter .column-3 {
+.MainFooter .footer-colum-categoria {
     color:#FFF;
     font-family: Inter;
     margin-top: 72px;
-    margin-left: 102px;
+    margin-left: 100spx;
     height: 240px;
     width: 96px;
 }
 
-.MainFooter .column-3 h4 {
+.MainFooter .footer-colum-categoria h4 {
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 28px;
 }
 
-.MainFooter .column-3 ul li {
+.MainFooter .footer-colum-categoria ul li {
     list-style-type: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 38px;
 }
 
-.MainFooter .column-3 ul li a{
+.MainFooter .footer-colum-categoria ul li a{
     color: #FFF;
     text-decoration: none;
 }
 
-.MainFooter .column-4 {
+.MainFooter .footer-colum-contato {
     color:#FFF;
     font-family: Inter;
     margin-top: 72px;
@@ -117,20 +117,20 @@
     width: 231px;
 }
 
-.MainFooter .column-4 h4 {
+.MainFooter .footer-colum-contato h4 {
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 28px;
 }
-.MainFooter .column-4 p {
+.MainFooter .footer-colum-contato p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 14px;
 }
 
-.MainFooter .column-4 a {
+.MainFooter .footer-colum-contato a {
     text-decoration: none;
     color: #FFF;
     font-size: 16px;
@@ -143,7 +143,7 @@
     margin-left: 100px;
     margin-right: 100px;
     border-top: 1px solid #FFF;
-    width: 1180px;
+    width: 1300px;
     align-items: center;
     justify-content: center;
 }

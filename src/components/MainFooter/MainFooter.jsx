@@ -3,7 +3,7 @@ import './MainFooter.css'
 export const MainFooter = () => {
     return (
         <div className="MainFooter">
-            <div className="column-1">
+            <div className="footer-colum-digital">
                 <h3><img src="../../src/assets/logo-DC.png" alt="Logo Digital-College" />Digital Store</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br />
@@ -14,28 +14,28 @@ export const MainFooter = () => {
                     <a href="#"><img src="../../src/assets/icon-twitterx.png" alt="" /></a>
                 </div>
             </div>
-            <div className="column-2">
+            <div className="footer-colum-informacao">
                 <h4>Informação</h4>
-                <ul>
-                    <li><a href="#">Sobre Drip Store</a></li>
-                    <li><a href="#">Segurança</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Trabalhe conosco</a></li>
-                    <li><a href="#">Meus Pedidos</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Sobre Drip Store</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                    </ul>
             </div>
-            <div className="column-3">
-            <h4>Categorias</h4>
-                <ul>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Calças</a></li>
-                    <li><a href="#">Bonés</a></li>
-                    <li><a href="#">Headphones</a></li>
-                    <li><a href="#">Tênis</a></li>
-                </ul>
+            <div className="footer-colum-informacao">
+                <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Bonés</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Tênis</a></li>
+                    </ul>
             </div>
-            <div className="column-4">
+            <div className="footer-colum-contato">
                 <h4>Contato</h4>
                 <p>Av. Santos Dumont, 1510 - 1 <br />
                 andar - Aldeota, Fortaleza - <br />
