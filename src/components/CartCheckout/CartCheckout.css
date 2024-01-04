@@ -4,6 +4,10 @@ body {
     font-family: Inter;
 }
 
+table {
+    width: 60vw;
+}
+
 thead th {
     border-bottom: 1px solid lightgray;
     padding: 15px 20px;
@@ -78,8 +82,21 @@ span.show-variable {
 }
 
 .inputs-container {
+    width: 60vw;
     display: flex;
     justify-content: space-between;
+}
+
+hr {
+    width: 60vw;
+    color: lightgray;
+}
+
+h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
 }
 
 
