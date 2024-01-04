@@ -57,6 +57,19 @@ export const CartCheckout = () => {
                     ))}
                 </tbody>
             </table>
+            <hr />
+            <div className='inputs-container'>
+                <div>
+                    <h3>Cupom de desconto</h3>
+                    <input type="text" name="desc" id="desc" placeholder='Insira seu código' />
+                    <button>OK</button>
+                </div>
+                <div>
+                <h3>Calcular frete</h3>
+                    <input type="text" name="cep" id="cep" placeholder='Insira seu CEP' />
+                    <button>OK</button>
+                </div>
+            </div>
         </div>
 
     )

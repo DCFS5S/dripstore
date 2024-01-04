@@ -77,5 +77,10 @@ span.show-variable {
     font-weight: bold;
 }
 
+.inputs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
