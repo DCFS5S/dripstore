@@ -3,6 +3,7 @@ import { OfferCard } from '../../components/OfferCard/OfferCard'
 import { ProductList } from "../../components/ProductList/ProductList";
 import productsData from "../../../products.json"
 import "./HomePage.css";
+import { MainFooter } from '../../components/MainFooter/MainFooter';
 
 export const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ export const HomePage = () => {
         </div>
       </section>
       <OfferCard />
+      <MainFooter />
     </>
   );
 };
