@@ -1,0 +1,11 @@
+.box-content {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  cursor: pointer;
+  background-color: #e7e7e7;
+  border: 2px solid #c92071;
+  border-radius: 10px;
+  padding: 40px 60px;
+}

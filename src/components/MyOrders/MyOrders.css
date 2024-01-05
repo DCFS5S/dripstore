@@ -1,0 +1,15 @@
+.account-content h3, h4, span {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.account-content p {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.account-content-header {
+  display: flex;
+  justify-content: space-between;
+}
