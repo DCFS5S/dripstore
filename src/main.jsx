@@ -9,6 +9,7 @@ import { HomePage } from './pages/HomePage/HomePage'
 import { CartCheckout } from './components/CartCheckout/CartCheckout'
 import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
+import { MyRequests } from './pages/MyRequests/MyRequests'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
   {
     path: '/criarconta',
     element: <CreateAccount />
-  }
+  },
+  {
+    path: '/meuspedidos',
+    element: <MyRequests />
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
