@@ -8,6 +8,7 @@ import {
 import { HomePage } from './pages/HomePage/HomePage'
 import { CartCheckout } from './components/CartCheckout/CartCheckout'
 import { ProductDetails } from './pages/ProductDetails/ProductDetails'
+import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/produto/:id',
     element: <ProductDetails />
+  },
+  {
+    path: '/criarconta',
+    element: <CreateAccount />
   }
 ])
 

@@ -1,0 +1,49 @@
+body {
+  background-color: #f9f8fe;
+  display: flex;
+}
+
+.create-account-container {
+  width: 750px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.personal-information {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.delivery-information {
+  background-color: white;
+  padding: 20px;
+
+}
+
+.create-account-container label {
+  padding-top: 0px;
+  display: flex;
+  padding: 10px 0px;
+}
+
+.create-account-container input {
+  border: none;
+  background-color: #f8f8f8;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.create-account-container a {
+  background-color: #c92071;
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
