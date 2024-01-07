@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color:rgba(201, 32, 113, 1) ;
+  color: #F5F5F5;
+  border-radius: 8px;
+  display: inline-block;
+  height: 40px;
+  min-width: 114px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 70px;
+  text-align: center;
+
+}
+
+.main-header  {
+  font-family: 'Inter', sans-serif;
+  padding: 32px 60px;
+}
+
+.main-header .main-header-content .logo {
+  width: 253px;
+  height: 44px;
+  margin-right: 27px;
+}
+.main-header .main-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .search-bar {
+  display: flex;
+  align-items: center;
+  width: 559px;
+  position: relative;
+}
+.search-lupa {
+  width: 100px;
+  height: 24px;
+  color: rgba(102, 102, 102, 1);
+  position: absolute;
+  right: 0;
+  border-radius: 8px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.main-header .main-header-search {
+  border: none;
+  position: absolute;
+  height: 60px;
+  background-color: rgba(248, 141, 141, 0.04);
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 24px ;
+  margin-left: 28px;
+  margin: 0;
+  right: 0;
+}
+
+.main-header .kart-button span {
+  background-color: #EE4266;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.main-header .register-link {
+  white-space: nowrap;
+  font-size: 16px;
+  color: rgb(71 71 71 );
+  margin-left: 48px;
+  margin-right: 30px;
+  width: 102px;
+  height: 28px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+}
+.button a {
+  margin-right: 70px;
+}
+.main-header .kart-button {
+  background: none;
+  border: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.main-header .main-header-menu ul {
+  display: flex;
+  list-style: none;
+  margin-top: 56px;
+}
+.main-header .main-header-menu li {
+  margin-right: 32px;
+}
+.main-header .main-header-menu a {
+  text-decoration: none;
+  letter-spacing: 0.75px;
+  font-size: 16px;
+  font-weight: 700; 
+  color: rgba(71, 71, 71, 1);
+}
+.main-header .main-header-menu a.home-bar  {
+  color: black;
+}
+
+.main-header .main-header-menu a.home-bar:hover {
+  text-decoration: underline;
+  color: rgba(201, 32, 113, 1);
+  border-radius: 2px;
+  text-underline-offset: 5px;
+  width: 49px;
+  height: 2px;
+}
+
+.main-banner {
+  display: flex;
+  margin-top: 124px ;
+  padding: 124px 100px;
+}
+.main-banner h3 {
+  font-size: 16 px;
+
+}
+
+.sneaker-banner {
+  width: 733.506px;
+  height: 431.606px;
+  transform: rotate(-19.343deg);
+  flex-shrink: 0;
+}
+

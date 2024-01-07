@@ -1,6 +1,6 @@
 .MainFooter {
     background: #1F1F1F;
-    height: 454px;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     font-family: Inter;
