@@ -1,3 +1,4 @@
+import { Footer } from "../../components/Footer/Footer";
 import "./MyRequests.css";
 
 export const MyRequests = () => {
@@ -56,6 +57,7 @@ export const MyRequests = () => {
         <h4>Finalizado</h4>   
       </div>
     </section>
+    <Footer />
     </>
   );
 };

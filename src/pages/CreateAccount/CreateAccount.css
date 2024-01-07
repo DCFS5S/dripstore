@@ -1,13 +1,18 @@
 body {
   background-color: #f9f8fe;
-  display: flex;
 }
 
 .create-account-container {
+  display: flex;
+  justify-content: center;
+}
+
+.create-account-content {
   width: 750px;
   margin-top: 40px;
   margin-bottom: 80px;
 }
+
 
 .personal-information {
   background-color: white;
@@ -19,7 +24,6 @@ body {
 .delivery-information {
   background-color: white;
   padding: 20px;
-
 }
 
 .create-account-container label {
@@ -35,6 +39,15 @@ body {
   width: 100%;
   box-sizing: border-box;
   border-radius: 5px;
+}
+
+.notification {
+  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding: 10px;
+  align-items: baseline;
 }
 
 .create-account-container a {

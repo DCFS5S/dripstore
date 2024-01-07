@@ -1,0 +1,29 @@
+.main-footer {
+  background-color: black;
+  color: white;
+  padding: 40px 80px 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer li {
+  padding: 5px 0px;
+}
+
+
+.footer-content {
+  padding: 20px;
+  width: 200px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 20px;
+}
