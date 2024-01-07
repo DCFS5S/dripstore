@@ -1,0 +1,32 @@
+.header-container {
+  background-color: white;
+  padding: 20px 100px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu input {
+  border: none;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #c92071;
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}

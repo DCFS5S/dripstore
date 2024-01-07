@@ -2,6 +2,8 @@ import './CartCheckout.css'
 import { useEffect, useState } from 'react'
 import { CartCheckoutRow } from './CartCheckoutRow'
 import productsData from "../../../products.json"
+import { Footer } from '../Footer/Footer'
+import { Header } from '../Header/Header'
 
 
 export const CartCheckout = () => {
@@ -31,33 +33,36 @@ export const CartCheckout = () => {
 
 
     return (
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th className='bold'>MEU CARRINHO</th>
-                        <th />
-                        <th>QUANTIDADE</th>
-                        <th>UNITÁRIO</th>
-                        <th>TOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {items.map(item => (
-                        <CartCheckoutRow
-                            key={item.id}
-                            ID={item.ID}
-                            name={item.name}
-                            color="Vermelho / Branco"
-                            size="42"
-                            price="219,00"
-                            oldPrice="219,00"
-                            onRemove={loadCartItems}
-                        />
-                    ))}
-                </tbody>
-            </table>
-        </div>
-
+        <>
+            <Header />
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th className='bold'>MEU CARRINHO</th>
+                            <th />
+                            <th>QUANTIDADE</th>
+                            <th>UNITÁRIO</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {items.map(item => (
+                            <CartCheckoutRow
+                                key={item.id}
+                                ID={item.ID}
+                                name={item.name}
+                                color="Vermelho / Branco"
+                                size="42"
+                                price="219,00"
+                                oldPrice="219,00"
+                                onRemove={loadCartItems}
+                            />
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+            <Footer />
+        </>
     )
 }

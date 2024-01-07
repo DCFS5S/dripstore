@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className='footer-content'>
           <ul>
             <h3>Informação</h3>
-            <li>Sobre Rocha Store</li>
+            <li>Drip Store</li>
             <li>Segurança</li>
             <li>Wishlist</li>
             <li>Blog</li>
