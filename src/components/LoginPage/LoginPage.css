@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #B9BAF3, #DBDCFA);
+    height: 100%;
+  }
+
+.login-wrapper {
+    display: flex;
+    margin-top: 120px;
+
+}
+
+.formulario-login {
+    height: 40%;
+    width: 40%;
+    min-width: 500px;
+    background-color: white;
+    padding: 30px;
+}
+
+.labels {
+    display: block;
+}
+
+.forgot-password {
+    display: block;
+    padding-top: 30px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #C92071;
+    border-radius: 8px;
+    width: 100%;
+}
+
+  
+ 
