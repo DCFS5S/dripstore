@@ -1,13 +1,13 @@
 import './CartCheckout.css'
 import { useEffect, useState } from 'react'
-import { CartCheckoutRow } from './CartCheckoutRow'
 import productsData from "../../../products.json"
+import CartCheckoutResume from './CartCheckoutResume'
+import CartCheckoutProduct from './CartCheckoutProduct'
 
 
 export const CartCheckout = () => {
     const [items, setItems] = useState([])
-
-
+    
     const loadCartItems = async () => {
         const response = await fetch('https://6578d273f08799dc804619b0.mockapi.io/api/v1/cart')
         const result = await response.json()
@@ -31,20 +31,21 @@ export const CartCheckout = () => {
 
 
     return (
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th className='bold'>MEU CARRINHO</th>
-                        <th />
-                        <th>QUANTIDADE</th>
-                        <th>UNITÁRIO</th>
-                        <th>TOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div className='cart-checkout'>
+            <div className='cart-checkout-container'>
+                <div className='cart-checkout-header'>
+                    <div className='left-container left-header'>
+                        <h2>MEU CARRINHO</h2>
+                    </div>
+                    <div className='right-container right-header'>
+                        <h2 className='right-item'>QUANTIDADE</h2>
+                        <h2 className='right-item'>UNITÁRIO</h2>
+                        <h2 className='right-item'>TOTAL</h2>
+                    </div>
+                </div>
+                <section>
                     {items.map(item => (
-                        <CartCheckoutRow
+                        <CartCheckoutProduct
                             key={item.id}
                             ID={item.ID}
                             name={item.name}
@@ -55,21 +56,21 @@ export const CartCheckout = () => {
                             onRemove={loadCartItems}
                         />
                     ))}
-                </tbody>
-            </table>
-            <hr />
-            <div className='inputs-container'>
-                <div>
-                    <h3>Cupom de desconto</h3>
-                    <input type="text" name="desc" id="desc" placeholder='Insira seu código' />
-                    <button>OK</button>
-                </div>
-                <div>
-                <h3>Calcular frete</h3>
-                    <input type="text" name="cep" id="cep" placeholder='Insira seu CEP' />
-                    <button>OK</button>
+                </section>
+                <div className='discount-container'>
+                    <div className='left-container inputs-container'>
+                        <h3>Cupom de desconto</h3>
+                        <input className='input-container' type="text" name="desc" id="desc" placeholder='Insira seu código' />
+                        <button className='ok-button'>OK</button>
+                    </div>
+                    <div className='right-container inputs-container'>
+                        <h3>Calcular frete</h3>
+                        <input className='input-container' type="text" name="cep" id="cep" placeholder='Insira seu CEP' />
+                        <button className='ok-button'>OK</button>
+                    </div>
                 </div>
             </div>
+            <div className='resume-container'><CartCheckoutResume/></div>
         </div>
 
     )
