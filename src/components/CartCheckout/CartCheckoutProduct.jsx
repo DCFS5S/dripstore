@@ -34,9 +34,9 @@ const CartCheckoutProduct = ({ ID, name, color, size, price, oldPrice, onRemove 
                                 <img className='image' src="../images/tenis.png" alt="" />
                             </div>
                             <div className='props-product-container'>
-                                <h3 className='text-product bolder'>{ name }</h3>
-                                <h3 className='text-product lightgray'>Cor: <span className='darkgray'>{ color }</span></h3>
-                                <h3 className='text-product lightgray'>Tamanho: <span className='darkgray'>{ size }</span></h3>
+                                <p className='text-product bolder'>{ name }</p>
+                                <p className='text-product lightgray'>Cor: <span className='darkgray'>{ color }</span></p>
+                                <p className='text-product lightgray'>Tamanho: <span className='darkgray'>{ size }</span></p>
                             </div>
                         </div>
                         <div className='sub-container right-container'>
@@ -47,12 +47,12 @@ const CartCheckoutProduct = ({ ID, name, color, size, price, oldPrice, onRemove 
                                 <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
                                 </div>
                                 <div className='right-item'>
-                                    <h3 className='old-price'>R$ <span>{ oldPrice }</span></h3>
-                                    <h3 className='price'>R$ <span>{ price }</span></h3>
+                                    <p className='old-price'>R$ <span>{ oldPrice }</span></p>
+                                    <p className='price'>R$ <span>{ price }</span></p>
                                 </div>
                                 <div className='right-item'>
-                                    <h3 className='old-price'>R$ <span>{ oldPrice }</span></h3>
-                                    <h3 className='price'>R$ <span>{ price }</span></h3>
+                                    <p className='old-price'>R$ <span>{ oldPrice }</span></p>
+                                    <p className='price'>R$ <span>{ price }</span></p>
                                 </div>
                         </div>
                     </div>

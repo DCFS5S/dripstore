@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-.left-header h2 {
+.left-header h3 {
     font-size: 14px;
     font-weight: 700;
     color: #474747;
@@ -57,7 +57,7 @@ body {
     gap: 30px;
 }
 
-.right-header h2 {
+.right-header h3 {
     font-size: 14px;
     font-weight: 500;
     color: #474747;
@@ -212,7 +212,7 @@ span.show-variable {
 }
 
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
     .cart-checkout {
         flex-direction: column;
         align-items: center;

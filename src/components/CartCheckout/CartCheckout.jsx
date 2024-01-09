@@ -35,12 +35,12 @@ export const CartCheckout = () => {
             <div className='cart-checkout-container'>
                 <div className='cart-checkout-header'>
                     <div className='left-container left-header'>
-                        <h2>MEU CARRINHO</h2>
+                        <h3>MEU CARRINHO</h3>
                     </div>
                     <div className='right-container right-header'>
-                        <h2 className='right-item'>QUANTIDADE</h2>
-                        <h2 className='right-item'>UNITÁRIO</h2>
-                        <h2 className='right-item'>TOTAL</h2>
+                        <h3 className='right-item'>QUANTIDADE</h3>
+                        <h3 className='right-item'>UNITÁRIO</h3>
+                        <h3 className='right-item'>TOTAL</h3>
                     </div>
                 </div>
                 <section>
