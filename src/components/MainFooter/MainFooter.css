@@ -112,7 +112,7 @@
 .MainFooter .footer-colum-contato {
     color:#FFF;
     font-family: Inter;
-    margin-left: 90px;
+
     width: 231px;
 }
 
@@ -126,7 +126,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    padding-bottom: 14px;
 }
 
 .MainFooter .footer-colum-contato a {
@@ -157,16 +156,26 @@
 }
 
 @media screen and (max-width: 400px) {
-    .MainFooter .footer-colum-digital {
-        background-color: red;
-        padding-left: 20px;
+    .MainFooter {
+        padding-top: 50px;
+    }
+    .MainFooter .container {
+        flex-flow: column;
     }
 
     .MainFooter .footer-colum-digital h3{
         padding-bottom: 20px;
     }
 
+    .MainFooter .footer-colum-digital p {
+        padding-bottom: 30px;
+    }
+
     .MainFooter .footer-colum-informacao {
-        padding-left: 20px;
+        padding-top: 40px;
+    }
+
+    .MainFooter .copyrigth {
+        margin-top: 40px;
     }
 }
