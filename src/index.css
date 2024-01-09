@@ -31,7 +31,8 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 1240px;
+  width: 85%;
   margin: auto;
   padding: 2em 0;
 }
