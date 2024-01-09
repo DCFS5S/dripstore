@@ -29,33 +29,33 @@ const CartCheckoutProduct = ({ ID, name, color, size, price, oldPrice, onRemove 
   return (
     <div>
       <div className='product-container'>
-                        <div className='sub-container left-container'>
-                            <div className='image-container'>
-                                <img className='image' src="../images/tenis.png" alt="" />
-                            </div>
-                            <div className='props-product-container'>
-                                <p className='text-product bolder'>{ name }</p>
-                                <p className='text-product lightgray'>Cor: <span className='darkgray'>{ color }</span></p>
-                                <p className='text-product lightgray'>Tamanho: <span className='darkgray'>{ size }</span></p>
-                            </div>
-                        </div>
-                        <div className='sub-container right-container'>
-                                <div className='right-item'>
-                                <button onClick={handleMinusClick}>-</button>
-                                    <span className='show-variable' onClick={showVariable}> {quantidade} </span>
-                                <button onClick={handlePlusClick}>+</button>
-                                <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
-                                </div>
-                                <div className='right-item'>
-                                    <p className='old-price'>R$ <span>{ oldPrice }</span></p>
-                                    <p className='price'>R$ <span>{ price }</span></p>
-                                </div>
-                                <div className='right-item'>
-                                    <p className='old-price'>R$ <span>{ oldPrice }</span></p>
-                                    <p className='price'>R$ <span>{ price }</span></p>
-                                </div>
-                        </div>
+            <div className='sub-container left-container'>
+                <div className='image-container'>
+                    <img className='image' src="../images/tenis.png" alt="" />
+                </div>
+                <div className='props-product-container'>
+                    <p className='text-product bolder'>{ name }</p>
+                    <p className='text-product lightgray'>Cor: <span className='darkgray'>{ color }</span></p>
+                    <p className='text-product lightgray'>Tamanho: <span className='darkgray'>{ size }</span></p>
+                </div>
+            </div>
+            <div className='sub-container right-container'>
+                    <div className='right-item'>
+                    <button onClick={handleMinusClick}>-</button>
+                        <span className='show-variable' onClick={showVariable}> {quantidade} </span>
+                    <button onClick={handlePlusClick}>+</button>
+                    <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
                     </div>
+                    <div className='right-item'>
+                        <p className='old-price'>R$ <span>{ oldPrice }</span></p>
+                        <p className='price'>R$ <span>{ price }</span></p>
+                    </div>
+                    <div className='right-item'>
+                        <p className='old-price'>R$ <span>{ oldPrice }</span></p>
+                        <p className='price'>R$ <span>{ price }</span></p>
+                    </div>
+            </div>
+        </div>
     </div>
   )
 }

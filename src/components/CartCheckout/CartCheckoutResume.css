@@ -1,11 +1,81 @@
+.resume {
+    width: 334px;
+    height: 364px;
+    font-family: inter;
+    background-color: blue;
+    border-radius: 4px;
+    padding: 30px;
+}
+
 .cart-resume-header {
-    color:#474747;
-    text-align: center;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
+    font-family: inter;
     font-weight: 700;
-    line-height: 22px; 
+    font-size: 14px;
+    line-height: 22px;
     letter-spacing: 0.75px;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.right-item1 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: (274px);
+    height: (22px);
+    justify-content: space-between;
+}
+
+.right-item2 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: (274px);
+    height: (22px);
+    justify-content: space-between;
+}
+
+.right-item3 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: (274px);
+    height: (22px);
+    justify-content: space-between;
+}
+
+.right-item4 {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: (274px);
+    height: (22px);
+    justify-content: space-between;
+}
+
+.card {
+   font-size: 14px;
+   font-weight: 500;
+   size: 14px;
+   line-height: 22px;
+   letter-spacing: 0.25px; 
+   text-align: left;
+}
+
+.resume-price {
+    font-weight: 500;
+    size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    text-align: end;
+}
+
+.resume-button{
+    padding-top: 30px;
+    width: 274px;
+    height: 40px;
 }

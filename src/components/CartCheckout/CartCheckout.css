@@ -217,6 +217,10 @@ span.show-variable {
         flex-direction: column;
         align-items: center;
     }
+
+    .cart-checkout-container {
+        width: 100%;
+    }
     
   }
 
