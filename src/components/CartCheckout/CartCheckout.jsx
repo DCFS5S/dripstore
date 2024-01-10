@@ -59,12 +59,12 @@ export const CartCheckout = () => {
                 </section>
                 <div className='discount-container'>
                     <div className='left-container inputs-container'>
-                        <h3>Cupom de desconto</h3>
+                        <p className='text-style'>Cupom de desconto</p>
                         <input className='input-container' type="text" name="desc" id="desc" placeholder='Insira seu código' />
                         <button className='ok-button'>OK</button>
                     </div>
                     <div className='right-container inputs-container'>
-                        <h3>Calcular frete</h3>
+                        <p className='text-style'>Calcular frete</p>
                         <input className='input-container' type="text" name="cep" id="cep" placeholder='Insira seu CEP' />
                         <button className='ok-button'>OK</button>
                     </div>
