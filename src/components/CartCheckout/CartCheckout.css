@@ -102,10 +102,6 @@ body {
     text-align: center;
 }
 
-.resume-container {
-    width: 28%;
-}
-
 .text-product {
     color: #1F1F1F;
     font-family: Inter;
@@ -210,6 +206,14 @@ span.show-variable {
     border: none;
     border-radius: 5px;
 }
+
+.resume-container {
+    width: 28%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 
 
 @media (max-width: 1250px) {
