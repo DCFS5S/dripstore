@@ -57,6 +57,17 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
                         <p className='price'>R$ <span>{price}</span></p>
                     )}
                 </div>
+                <div className='right-item'>
+                    {oldPrice && (
+                        <>
+                            <p className='old-price'>R$ <span>{oldPrice}</span></p>
+                            <p className='price'>R$ <span>{price}</span></p>
+                        </>
+                    )}
+                    {!oldPrice && (
+                        <p className='price'>R$ <span>{price}</span></p>
+                    )}
+                </div>
             </div>
         </div>
     </div>
