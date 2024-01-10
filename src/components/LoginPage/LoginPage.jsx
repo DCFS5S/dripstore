@@ -1,9 +1,43 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './LoginPage.css'
 
-
 export const LoginPage = () => {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
 
+    const handleUsernameChange = async (event) => {
+        setUsername(event.target.value)
+    }
+
+    const handlePasswordChange = async (event) => {
+        setPassword(event.target.value)
+    }
+
+    
+    const enviarFormulario = async () => {
+        
+        const API_URL = ''
+
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            })
+            const data = await response.json()
+            console.log('resposta do servidor', data)
+        }
+        catch (error) {
+            console.error('Erro ao enviar o formulário', error)
+        }
+    }
+
+    useEffect(() => {
+        enviarFormulario()
+    })
+   
     return (
         <>
         <div className='body-login'>   
@@ -16,15 +50,15 @@ export const LoginPage = () => {
             <div className='login-body'>
                 <div>
                     <label className='labels' htmlFor="username">Login*</label>
-                    <input type="text" placeholder='Insira seu login ou email' />
+                    <input type="text" value={username} onChange={handleUsernameChange} placeholder='Insira seu login ou email' />
                 </div>
                 <div> 
                     <label className='labels' htmlFor="password">Senha*</label>
-                    <input type="password" name="password" id="pass" minLength={8} required placeholder='Insira sua senha' />
+                    <input type="password" value={password} name="password" id="pass" onChange={handlePasswordChange} minLength={8} required placeholder='Insira sua senha' />
                 </div>
 
                 <a className='forgot-password' href="#">Esqueci minha senha</a>
-                <button>Acessar Conta</button>
+                <button type='submit' onClick={enviarFormulario}>Acessar Conta</button>
             </div>
             <div className='login-footer'>
                 <h4>Ou faça login com</h4>
@@ -37,6 +71,8 @@ export const LoginPage = () => {
             </div>
             </div>           
         </div>
+
+        
         </>
     )
 }
