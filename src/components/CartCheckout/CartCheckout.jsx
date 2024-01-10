@@ -51,7 +51,7 @@ export const CartCheckout = () => {
                             name={item.name}
                             color="Vermelho / Branco"
                             size="42"
-                            price="219,00"
+                            price={item.price}
                             oldPrice="219,00"
                             onRemove={loadCartItems}
                         />
