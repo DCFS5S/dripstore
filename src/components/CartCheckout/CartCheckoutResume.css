@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .resume {
     width: 334px;
     height: 364px;
-    font-family: inter;
+    font-family: Inter;
     background-color: blue;
     border-radius: 4px;
     padding: 30px;
 }
 
 .cart-resume-header {
-    font-family: inter;
+    font-family: Inter;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -78,4 +86,5 @@
     padding-top: 30px;
     width: 274px;
     height: 40px;
+    font-family: Inter;
 }
