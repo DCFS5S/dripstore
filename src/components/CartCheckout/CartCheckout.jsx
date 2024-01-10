@@ -49,6 +49,7 @@ export const CartCheckout = () => {
                             key={item.id}
                             ID={item.ID}
                             name={item.name}
+                            imgSrc={item.imgSrc}
                             color="Vermelho / Branco"
                             size="42"
                             price={item.price}

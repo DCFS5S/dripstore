@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './CartCheckout.css'
 
-const CartCheckoutProduct = ({ ID, name, color, size, price, oldPrice, onRemove }) => {
+const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, onRemove }) => {
     const [quantidade, setQuantidade] = useState(1)
 
     const handleMinusClick = () => {
@@ -31,7 +31,7 @@ const CartCheckoutProduct = ({ ID, name, color, size, price, oldPrice, onRemove 
       <div className='product-container'>
             <div className='sub-container left-container'>
                 <div className='image-container'>
-                    <img className='image' src="../images/tenis.png" alt="" />
+                    <img className='image' src={ imgSrc } alt={ name } />
                 </div>
                 <div className='props-product-container'>
                     <p className='text-product bolder'>{ name }</p>
