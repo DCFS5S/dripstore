@@ -5,7 +5,7 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
     const [quantidade, setQuantidade] = useState(1)
 
     const handleMinusClick = () => {
-        if (quantidade > 0) {
+        if (quantidade > 1) {
             setQuantidade(quantidade - 1)
         }
     }
