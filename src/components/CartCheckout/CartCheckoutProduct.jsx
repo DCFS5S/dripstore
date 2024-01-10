@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './CartCheckout.css'
 
-const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, onRemove }) => {
+export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, onRemove }) => {
     const [quantidade, setQuantidade] = useState(1)
 
     const handleMinusClick = () => {
@@ -63,4 +63,4 @@ const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, o
   )
 }
 
-export default CartCheckoutProduct
+

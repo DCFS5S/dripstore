@@ -1,4 +1,3 @@
-import React from 'react'
 import './CartList.css'
 import { CartListProduct } from './CartListProduct'
 

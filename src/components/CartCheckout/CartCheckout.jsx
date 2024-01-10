@@ -1,8 +1,8 @@
 import './CartCheckout.css'
 import { useEffect, useState } from 'react'
 import productsData from "../../../products.json"
-import CartCheckoutResume from './CartCheckoutResume'
-import CartCheckoutProduct from './CartCheckoutProduct'
+import { CartCheckoutResume } from './CartCheckoutResume'
+import { CartCheckoutProduct } from './CartCheckoutProduct'
 
 export const CartCheckout = () => {
     const [items, setItems] = useState([])

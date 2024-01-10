@@ -1,7 +1,6 @@
-import React from 'react'
 import './CartCheckoutResume.css'
 
-const CartCheckoutResume = () => {
+export const CartCheckoutResume = () => {
   return (
     <div className='resume'>
         <div>
@@ -39,4 +38,4 @@ const CartCheckoutResume = () => {
   )
 }
 
-export default CartCheckoutResume
+
