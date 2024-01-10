@@ -71,7 +71,6 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
                 <div className='right-item'>
                     {oldPrice && (
                         <>
-                            <p className='old-price'>R$ <span>{oldPrice}</span></p>
                             <p className='price'>R$ <span>{calculateTotal().toFixed(2).replace('.', ',')}</span></p>
                         </>
                     )}
