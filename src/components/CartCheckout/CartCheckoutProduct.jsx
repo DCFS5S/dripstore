@@ -27,25 +27,15 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
     }
 
     const calculateTotal = () => {
-        const priceNumber = parseFloat(price);
+        const priceNumber = parseFloat(price)
         const quantidadeNumber = parseInt(quantidade)
-    
-        if (!isNaN(priceNumber) && !isNaN(quantidadeNumber)) {
-            return priceNumber * quantidadeNumber
-        } else {
-            return 0
-        }
+        return priceNumber * quantidadeNumber
     }
 
     const calculateOldPriceTotal = () => {
-        const oldPriceNumber = parseFloat(oldPrice);
+        const oldPriceNumber = parseFloat(oldPrice)
         const quantidadeNumber = parseInt(quantidade)
-    
-        if (!isNaN(oldPriceNumber) && !isNaN(quantidadeNumber)) {
-            return oldPriceNumber * quantidadeNumber
-        } else {
-            return 0
-        }
+        return oldPriceNumber * quantidadeNumber
     }
 
   return (
