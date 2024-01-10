@@ -28,8 +28,8 @@ export const LoginPage = () => {
             </div>
             <div className='login-footer'>
                 <h4>Ou faça login com</h4>
-                <a href="#"><img src="../images/gmail-icon.png" alt="icone-gmail" /></a>
-                <a href="#"><img src="../images/fb-icon.png" alt="icone-facebook" /></a>
+                <a href="#"><img src="../images/gmail-icon.svg" id='gmail-icon' alt="icone-gmail" /></a>
+                <a href="#"><img src="../images/fb-icon.svg" alt="icone-facebook" /></a>
             </div>
             </div>
             <div>
