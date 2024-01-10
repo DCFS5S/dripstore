@@ -3,7 +3,7 @@ import './CartList.css'
 import { CartListProduct } from './CartListProduct'
 
 
-const CartList = () => {
+export const CartList = () => {
   return (
     <div className='cart-list'>
         <div className="cart-list-header">
@@ -22,4 +22,3 @@ const CartList = () => {
   )
 }
 
-export default CartList

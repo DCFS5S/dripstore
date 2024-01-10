@@ -70,7 +70,7 @@ export const CartCheckout = () => {
                     </div>
                 </div>
             </div>
-            <div className='resume-container'><CartCheckoutResume/></div>
+            <div className='resume-container'><CartCheckoutResume/></div>          
         </div>
     )
 }
