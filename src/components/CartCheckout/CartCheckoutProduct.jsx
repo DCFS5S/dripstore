@@ -40,20 +40,23 @@ const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, o
                 </div>
             </div>
             <div className='sub-container right-container'>
-                    <div className='right-item'>
+                <div className='right-item'>
                     <button onClick={handleMinusClick}>-</button>
                         <span className='show-variable' onClick={showVariable}> {quantidade} </span>
                     <button onClick={handlePlusClick}>+</button>
                     <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
-                    </div>
-                    <div className='right-item'>
-                        <p className='old-price'>R$ <span>{ oldPrice }</span></p>
-                        <p className='price'>R$ <span>{ price }</span></p>
-                    </div>
-                    <div className='right-item'>
-                        <p className='old-price'>R$ <span>{ oldPrice }</span></p>
-                        <p className='price'>R$ <span>{ price }</span></p>
-                    </div>
+                </div>
+                <div className='right-item'>
+                    {oldPrice && (
+                        <>
+                            <p className='old-price'>R$ <span>{oldPrice}</span></p>
+                            <p className='price'>R$ <span>{price}</span></p>
+                        </>
+                    )}
+                    {!oldPrice && (
+                        <p className='price'>R$ <span>{price}</span></p>
+                    )}
+                </div>
             </div>
         </div>
     </div>

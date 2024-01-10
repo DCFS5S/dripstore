@@ -52,11 +52,7 @@ export const CartCheckout = () => {
                             color="Vermelho / Branco"
                             size="42"
                             price={(item.price).toFixed(2).replace('.', ',')}
-                            oldPrice={
-                                item.discount > 0
-                                    ? (item.price / (1 - item.discount / 100)).toFixed(2).replace('.', ',')
-                                    : item.price.toFixed(2).replace('.', ',')
-                            }
+                            {...(item.discount > 0 ? { oldPrice: (item.price / (1 - item.discount / 100)).toFixed(2).replace('.', ',') } : null)}
                             onRemove={loadCartItems}
                         />
                     ))}
