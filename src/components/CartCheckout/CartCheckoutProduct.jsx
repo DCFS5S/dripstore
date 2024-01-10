@@ -26,6 +26,17 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
         }
     }
 
+    const calculateTotal = () => {
+        const priceNumber = parseFloat(price);
+        const quantidadeNumber = parseInt(quantidade)
+    
+        if (!isNaN(priceNumber) && !isNaN(quantidadeNumber)) {
+            return priceNumber * quantidadeNumber
+        } else {
+            return 0
+        }
+    }
+
   return (
     <div>
       <div className='product-container'>
@@ -61,11 +72,11 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
                     {oldPrice && (
                         <>
                             <p className='old-price'>R$ <span>{oldPrice}</span></p>
-                            <p className='price'>R$ <span>{price}</span></p>
+                            <p className='price'>R$ <span>{calculateTotal().toFixed(2).replace('.', ',')}</span></p>
                         </>
                     )}
                     {!oldPrice && (
-                        <p className='price'>R$ <span>{price}</span></p>
+                        <p className='price'>R$ <span>{calculateTotal().toFixed(2).replace('.', ',')}</span></p>
                     )}
                 </div>
             </div>
