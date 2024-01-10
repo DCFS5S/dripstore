@@ -4,7 +4,6 @@ import productsData from "../../../products.json"
 import CartCheckoutResume from './CartCheckoutResume'
 import CartCheckoutProduct from './CartCheckoutProduct'
 
-
 export const CartCheckout = () => {
     const [items, setItems] = useState([])
     
@@ -73,6 +72,5 @@ export const CartCheckout = () => {
             </div>
             <div className='resume-container'><CartCheckoutResume/></div>
         </div>
-
     )
 }
