@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { ProductDetailsComponent } from '../../ProductDetailsComponent/ProductDetailsComponent'
+import { ProductDetailsComponent } from '../../components/ProductDetailsComponent/ProductDetailsComponent.jsx'
 
 export const ProductDetailsPage = () => {
     const { productName } = useParams()
