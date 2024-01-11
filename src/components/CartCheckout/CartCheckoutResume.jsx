@@ -10,7 +10,7 @@ export const CartCheckoutResume = ({ total }) => {
         <div className='body'>
           <div className='right-itens right-itens-text'>
              <p className='card'>Subtotal: </p>
-             <p className='resume-price'><span>R$</span> <span>{ total }</span></p>
+             <p className='resume-price'><span>R$</span> <span>{total.toFixed(2).replace('.', ',')}</span></p>
           </div>
 
           <div className='right-itens right-itens-text'>
