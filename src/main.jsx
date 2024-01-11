@@ -7,12 +7,11 @@ import {
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
 import { CartCheckList } from './components/CartCheckList/CartCheckList'
-import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 import { MyAccount } from './pages/MyAccount/MyAccount'
-import { MyProfile } from './components/MyProfile/MyProfile'
-import { MyOrders } from './components/MyOrders/MyOrders'
-import { MyInfos } from './components/MyInfos/MyInfos'
+import { MyProfile } from './pages/MyAccount/components/MyProfile/MyProfile'
+import { MyOrders } from './pages/MyAccount/components/MyOrders/MyOrders'
+import { MyInfos } from './pages/MyAccount/components/MyInfos/MyInfos'
 
 const router = createBrowserRouter([
   {
@@ -28,10 +27,6 @@ const router = createBrowserRouter([
       price="219,00"
       oldPrice="219,00"
     />,
-  },
-  {
-    path: '/produto/:id',
-    element: <ProductDetails />
   },
   {
     path: '/criar-conta',
