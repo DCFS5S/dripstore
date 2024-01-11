@@ -25,6 +25,5 @@ export const Header = () => {
                     </ul>
                 </nav>
         </div>
-        
     )
 }

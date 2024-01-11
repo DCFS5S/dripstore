@@ -58,7 +58,7 @@
   border: none;
   position: absolute;
   height: 60px;
-  background-color: rgba(248, 141, 141, 0.04);
+  background-color: rgba(82, 80, 80, 0.04);
   width: 100%;
   border-radius: 8px;
   padding: 0 24px ;
@@ -115,7 +115,7 @@
   text-decoration: none;
   letter-spacing: 0.75px;
   font-size: 16px;
-  font-weight: 700; 
+  font-weight: 550; 
   color: rgba(71, 71, 71, 1);
 }
 .main-header .main-header-menu a.home-bar  {
@@ -125,6 +125,7 @@
 .main-header .main-header-menu a.home-bar:hover {
   text-decoration: underline;
   color: rgba(201, 32, 113, 1);
+  font-weight: 700; 
   border-radius: 2px;
   text-underline-offset: 5px;
   width: 49px;
