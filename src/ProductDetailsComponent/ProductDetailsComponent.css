@@ -1,0 +1,37 @@
+
+.Title{
+
+width: 440px;
+
+color: var(--dark-gray, #1F1F1F);
+font-feature-settings: 'clig' off, 'liga' off;
+
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1px;
+}
+
+.paragraph{
+ display: flex;
+width: 425px;
+height: 21px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+
+color: var(--dark-gray-3, #666);
+font-feature-settings: 'clig' off, 'liga' off;
+
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0.5px;
+}
+.star1{
+    
+}
