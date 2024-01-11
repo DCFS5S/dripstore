@@ -1,0 +1,23 @@
+.carrouselContainer {
+    width: 58%;
+    position: relative;
+}
+
+.galleryImages {
+    display: flex;
+    width: 100%;
+
+    
+}
+.galleryImages img {   
+    width: 20%;
+    aspect-ratio: 1.22;
+    object-fit: scale-down;
+
+}
+
+.currentImage img {
+    width: 100%;
+    aspect-ratio: 1.22;
+    object-fit: scale-down;
+}
