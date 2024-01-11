@@ -33,7 +33,7 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
     }
 
     const calculateOldPriceTotal = () => {
-        const oldPriceNumber = parseFloat(oldPrice)
+        const oldPriceNumber = parseFloat(oldPrice.replace(',', '.'))
         const quantidadeNumber = parseInt(quantidade)
         return oldPriceNumber * quantidadeNumber
     }

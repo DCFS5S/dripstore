@@ -10,9 +10,9 @@
     width: 334px;
     height: 364px;
     font-family: Inter;
-    background-color: blue;
     border-radius: 4px;
     padding: 30px;
+    padding-top: 0px;
 }
 
 .cart-resume-header {
