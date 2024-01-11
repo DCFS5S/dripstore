@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 import './LoginPage.css'
+import { MainFooter } from '../MainFooter/MainFooter'
 
 export const LoginPage = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [IsLoading, setIsLoading] = useState()
+    const [error, setError] = useState(false)
 
     const handleUsernameChange = async (event) => {
         setUsername(event.target.value)
@@ -15,21 +18,22 @@ export const LoginPage = () => {
 
     
     const enviarFormulario = async () => {
+        console.log('Formulario enviado por:', {username, password})
         const API_URL = ''
 
         try {
             const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json', //(estrutura padrão 'POST")
+                    'Content-Type': 'application/json', 
                 },
                 body: JSON.stringify({ username, password }),
             })
             const data = await response.json()
             console.log('resposta do servidor', data)
         }
-        catch (error) {
-            console.error('Erro ao enviar o formulário', error)
+        catch (err) {
+            console.error('Erro ao enviar o formulário', err)
         }
     }
 
@@ -44,7 +48,7 @@ export const LoginPage = () => {
                 <div className='formulario-login'>
             <div className='login-header'>
                 <h1>Acesse sua conta</h1>
-                <p>Novo cliente? Então registre-se <a href="#">aqui</a></p>
+                <p>Novo cliente? Então registre-se <a href="#">aqui.</a></p>
             </div> 
             <div className='login-body'>
                 <div>
@@ -55,8 +59,9 @@ export const LoginPage = () => {
                     <label className='labels' htmlFor="password">Senha*</label>
                     <input type="password" value={password} name="password" id="pass" onChange={handlePasswordChange} minLength={8} required placeholder='Insira sua senha' />
                 </div>
-
-                <a className='forgot-password' href="#">Esqueci minha senha</a>
+                <div className='new-password'>
+                    <a className='forgot-password' href="#">Esqueci minha senha</a>
+                </div>
                 <button type='submit' onClick={enviarFormulario}>Acessar Conta</button>
             </div>
             <div className='login-footer'>
@@ -70,7 +75,7 @@ export const LoginPage = () => {
             </div>
             </div>           
         </div>
-
+        <MainFooter />
         
         </>
     )
