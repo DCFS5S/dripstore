@@ -33,5 +33,16 @@ line-height: 18px;
 letter-spacing: 0.5px;
 }
 .star1{
+
+}
+
+.rate {
+    display: flex;
+    background: #F6AA1C;
+    border-radius: 4px;
+    justify-content: space-around;
+    align-items: center;
+    width: 63px;
+    padding: 6px 10px;
     
 }
