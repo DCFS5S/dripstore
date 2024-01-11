@@ -21,48 +21,76 @@
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.75px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #CCCCCC;
     padding-bottom: 20px;
 }
 
-.right-item1 {
+.right-itens {
     padding-top: 30px;
     display: flex;
     align-items: center;
-    background-color: red;
-    width: (274px);
-    height: (22px);
+    width: 274px;
+    height: 22px;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
-.right-item2 {
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    background-color: red;
-    width: (274px);
-    height: (22px);
-    justify-content: space-between;
+.right-itens span {
+    color: #1F1F1F;
 }
 
-.right-item3 {
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    background-color: red;
-    width: (274px);
-    height: (22px);
-    justify-content: space-between;
+.right-itens-text {
+    color: #8F8F8F;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
 }
 
-.right-item4 {
+.total-item {
     padding-top: 30px;
     display: flex;
     align-items: center;
-    background-color: red;
-    width: (274px);
-    height: (22px);
+    width: 274px;
+    height: 22px;
     justify-content: space-between;
+    margin-top: 20px;
+}
+
+.total-item-text p {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Inter;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    text-align: left;
+
+}
+
+.total-item span {
+    color: #EE4266;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Inter;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    text-align: left;
+}
+
+.parcelamento {
+    color: #8F8F8F;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: right;
+    padding-top: 20px;
+
 }
 
 .card {
@@ -83,8 +111,12 @@
 }
 
 .resume-button{
-    padding-top: 30px;
+    font-family: Inter;
+    background-color: #F6AA1C;
+    color: #FFFFFF;
+    border-radius: 10px;
     width: 274px;
     height: 40px;
-    font-family: Inter;
+    margin-top: 25px;
 }
+

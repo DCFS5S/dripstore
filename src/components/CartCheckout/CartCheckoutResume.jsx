@@ -8,29 +8,30 @@ export const CartCheckoutResume = () => {
         </div>
         
         <div className='body'>
-          <div className='right-item1'>
+          <div className='right-itens right-itens-text'>
              <p className='card'>Subtotal: </p>
-             <p className='resume-price'>R$ <span>219,00</span></p>
+             <p className='resume-price'><span>R$</span> <span>219,00</span></p>
           </div>
 
-          <div className='right-item2'>
+          <div className='right-itens right-itens-text'>
              <p className='card'>Frete: </p>
-             <p className='resume-price'>R$ <span>0,00</span></p>
+             <p className='resume-price'><span>R$</span> <span>0,00</span></p>
           </div>
 
-          <div className='right-item3'>
+          <div className='right-itens right-itens-text'>
             <p className='card'>Desconto: </p>
-            <p className='resume-price'>R$ <span>30,00</span></p>
+            <p className='resume-price'><span>R$</span> <span>30,00</span></p>
           </div>
 
-          <div className='right-item4'>
+          <div className='total-item total-item-text'>
             <p className='card'>Total </p>
-            <p className='resume-price'>R$ <span>219,00</span></p>
+            <p className='resume-price'><span>R$</span> <span>219,00</span></p>
           </div>  
-
-
-          <div className='resume-button'>
-            <button>Continuar</button>
+          <div className='parcelamento'>
+            <p>ou 10x de R$<span>21,00</span>sem juros</p>
+          </div>
+          <div>
+            <button className='resume-button'>Continuar</button>
           </div>
         </div>
         
