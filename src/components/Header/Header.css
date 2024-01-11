@@ -19,12 +19,11 @@
   font-size: 12px;
   margin-right: 70px;
   text-align: center;
-
 }
 
 .main-header  {
   font-family: 'Inter', sans-serif;
-  padding: 32px 60px;
+  padding: 32px 85px;
 }
 
 .main-header .main-header-content .logo {
@@ -32,17 +31,20 @@
   height: 44px;
   margin-right: 27px;
 }
+
 .main-header .main-header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .main-header .search-bar {
   display: flex;
   align-items: center;
   width: 559px;
   position: relative;
 }
+
 .search-lupa {
   width: 100px;
   height: 24px;
@@ -58,7 +60,7 @@
   border: none;
   position: absolute;
   height: 60px;
-  background-color: rgba(82, 80, 80, 0.04);
+  background-color: rgba(248, 141, 141, 0.04);
   width: 100%;
   border-radius: 8px;
   padding: 0 24px ;
@@ -92,9 +94,11 @@
   line-height: 28px;
   letter-spacing: 0.75px;
 }
+
 .button a {
   margin-right: 70px;
 }
+
 .main-header .kart-button {
   background: none;
   border: none;
@@ -108,9 +112,11 @@
   list-style: none;
   margin-top: 56px;
 }
+
 .main-header .main-header-menu li {
   margin-right: 32px;
 }
+
 .main-header .main-header-menu a {
   text-decoration: none;
   letter-spacing: 0.75px;
@@ -118,6 +124,7 @@
   font-weight: 550; 
   color: rgba(71, 71, 71, 1);
 }
+
 .main-header .main-header-menu a.home-bar  {
   color: black;
 }
@@ -137,9 +144,9 @@
   margin-top: 124px ;
   padding: 124px 100px;
 }
+
 .main-banner h3 {
   font-size: 16 px;
-
 }
 
 .sneaker-banner {
@@ -148,4 +155,3 @@
   transform: rotate(-19.343deg);
   flex-shrink: 0;
 }
-
