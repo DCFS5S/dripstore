@@ -6,18 +6,25 @@
 .galleryImages {
     display: flex;
     width: 100%;
-
-    
+    position: relative;
 }
+
 .galleryImages img {   
     width: 20%;
     aspect-ratio: 1.22;
-    object-fit: scale-down;
-
+    object-fit: cover;
 }
 
 .currentImage img {
     width: 100%;
     aspect-ratio: 1.22;
-    object-fit: scale-down;
+    object-fit: contain;
+    background-color: #E2E3FF;
+    border-radius: 4px;
+}
+.right{
+    position: absolute;
+}
+.left{
+    position: absolute;
 }
