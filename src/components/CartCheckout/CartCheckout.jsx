@@ -23,11 +23,13 @@ export const CartCheckout = () => {
         )
     }
 
-
     useEffect(() => {
         loadCartItems()
     }, [])
 
+   const calculateSubTotal = () => {
+    return 219
+   }
 
     return (
         <div className='cart-checkout'>
@@ -70,7 +72,11 @@ export const CartCheckout = () => {
                     </div>
                 </div>
             </div>
-            <div className='resume-container'><CartCheckoutResume/></div>          
+            <div className='resume-container'>
+                <CartCheckoutResume
+                    total = {calculateSubTotal()}
+                />
+            </div>       
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import './CartCheckoutResume.css'
 
-export const CartCheckoutResume = () => {
+export const CartCheckoutResume = ({ total }) => {
   return (
     <div className='resume'>
         <div>
@@ -10,7 +10,7 @@ export const CartCheckoutResume = () => {
         <div className='body'>
           <div className='right-itens right-itens-text'>
              <p className='card'>Subtotal: </p>
-             <p className='resume-price'><span>R$</span> <span>219,00</span></p>
+             <p className='resume-price'><span>R$</span> <span>{ total }</span></p>
           </div>
 
           <div className='right-itens right-itens-text'>
