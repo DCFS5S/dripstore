@@ -4,7 +4,7 @@ import productsData from "../../../products.json"
 import { CartCheckoutResume } from './CartCheckoutResume'
 import { CartCheckoutProduct } from './CartCheckoutProduct'
 
-export const CartCheckout = () => {
+export const CartCheckout = ({ price, quantidade }) => {
     const [items, setItems] = useState([])
     
     const loadCartItems = async () => {
@@ -28,7 +28,13 @@ export const CartCheckout = () => {
     }, [])
 
    const calculateSubTotal = () => {
-    return 219
+    let total = 0
+
+    items.forEach(item => {
+        total += item.price
+    })
+
+    return total
    }
 
     return (
@@ -53,8 +59,8 @@ export const CartCheckout = () => {
                             imgSrc={item.imgSrc}
                             color="Vermelho / Branco"
                             size="42"
-                            price={(item.price).toFixed(2).replace('.', ',')}
-                            {...(item.discount > 0 ? { oldPrice: (item.price / (1 - item.discount / 100)).toFixed(2).replace('.', ',') } : null)}
+                            price={item.price}
+                            {...(item.discount > 0 ? { oldPrice: (item.price / (1 - item.discount / 100))} : null)}
                             onRemove={loadCartItems}
                         />
                     ))}
