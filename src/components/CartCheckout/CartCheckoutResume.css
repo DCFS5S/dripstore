@@ -118,5 +118,10 @@
     width: 274px;
     height: 40px;
     margin-top: 25px;
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    background-color: #c88a16;
 }
 
