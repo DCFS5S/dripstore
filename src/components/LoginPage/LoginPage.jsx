@@ -15,14 +15,13 @@ export const LoginPage = () => {
 
     
     const enviarFormulario = async () => {
-        
         const API_URL = ''
 
         try {
             const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json', //(estrutura padrão 'POST")
                 },
                 body: JSON.stringify({ username, password }),
             })
@@ -36,7 +35,7 @@ export const LoginPage = () => {
 
     useEffect(() => {
         enviarFormulario()
-    })
+    }, [])
    
     return (
         <>
