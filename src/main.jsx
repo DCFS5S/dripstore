@@ -6,7 +6,12 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
-import { CartCheckList } from './components/CartCheckList/CartCheckList'
+import { CreateAccount } from './pages/CreateAccount/CreateAccount'
+import { MyAccount } from './pages/MyAccount/MyAccount'
+import { MyProfile } from './pages/MyAccount/MyProfile/MyProfile'
+import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
+import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
+import { Pgto } from './pages/MyAccount/Pgto/Pgto'
 
 const router = createBrowserRouter([
   {
@@ -15,13 +20,41 @@ const router = createBrowserRouter([
   },
   {
     path: '/carrinho',
-    element: <CartCheckList
-      name="Tênis Nike Revolution 6 Next Nature Masculino"
-      color="Vermelho / Branco"
-      size="42"
-      price="219,00"
-      oldPrice="219,00"
-    />,
+    element: <h1>corrigir</h1>,
+  },
+  {
+    path: '/produto/:id',
+    element: <h1>corrigir</h1>
+  },
+  {
+    path: '/criar-conta',
+    element: <CreateAccount />
+  },
+  {
+    path: '/login',
+    element: <h1>corrigir</h1>
+  },
+  {
+    path: '/meus-pedidos',
+    element: <MyAccount />,
+    children: [
+      {
+        path: 'meu-perfil',
+        element: <MyProfile />
+      },
+      {
+        path: 'meus-pedidos',
+        element: <MyOrders />
+      },
+      {
+        path: 'minhas-informacoes',
+        element: <MyInfos />
+      },
+      {
+        path: 'metodos-de-pagamento',
+        element: <Pgto />
+      },
+    ]
   },
 ])
 

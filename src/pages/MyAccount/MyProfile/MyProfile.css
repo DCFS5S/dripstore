@@ -1,0 +1,18 @@
+.box-content {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  background-color: #fff;
+  border: 1px solid #6e6e6e;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.box:hover {
+  background-color: #f8d7e2;
+}
