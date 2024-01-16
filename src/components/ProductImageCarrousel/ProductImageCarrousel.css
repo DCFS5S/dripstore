@@ -7,12 +7,14 @@
     display: flex;
     width: 100%;
     position: relative;
+    gap: 28px;
 }
 
 .galleryImages img {   
-    width: 20%;
+    width: calc((100% - 112px)/5);
     aspect-ratio: 1.22;
     object-fit: cover;
+    
 }
 
 .currentImage img {
@@ -21,10 +23,25 @@
     object-fit: contain;
     background-color: #E2E3FF;
     border-radius: 4px;
+    padding: 50px;
 }
-.right{
+.sliderArrows{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(45deg);
+    background: none;
+    border: none;
+    border-left: 3px solid black; 
+    border-bottom: 3px solid black;
+    aspect-ratio: 1;
+    margin: 10px;
 }
-.left{
-    position: absolute;
+.sliderArrows.right {
+    right: 0;
+    border: none;
+    border-top: 3px solid black; 
+    border-right: 3px solid black; 
+}
+.currentImage{
+    position: relative;
 }

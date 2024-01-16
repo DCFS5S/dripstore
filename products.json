@@ -1,51 +1,101 @@
 [
   {
+    "id": 1,
     "category": "Tenis",
     "discount": 30,
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389",
+      "https://baccabucci.com/cdn/shop/products/MG_8831_6983b4ff-5d28-4d59-a03e-f55bce226ad7.jpg?v=1635422651",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROp3cDtQxeudExdBJhg_oJz0fDnqisPxLBiw&usqp=CAU"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 200
   },
   {
+    "id": 2,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 100
   },
   {
+    "id": 3,
     "category": "Tenis",
     "discount": 20,
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 100
   },
   {
+    "id": 4,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 100
   },
   {
+    "id": 5,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 100
   },
   {
+    "id": 6,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 300
   },
   {
+    "id": 7,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 300
   },
   {
+    "id": 8,
     "category": "Tenis",
     "imgSrc": "/assets/img/featured-product.png",
+    "images": [
+      "https://i.pinimg.com/originals/c4/30/86/c43086baed27cdacb5f4769dfa5531fc.jpg",
+      "https://www.campusshoes.com/cdn/shop/files/FENCE_22G-1060_WHT-BLK.jpg?v=1690478383",
+      "https://www.campusshoes.com/cdn/shop/products/RAISE_WHT_f1a5a2ec-8a23-4795-a796-0da7455dc57a.jpg?v=1679719389"
+    ],
     "name": "K-Swiss V8 - Masculino",
     "price": 300
   }
