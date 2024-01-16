@@ -1,0 +1,54 @@
+.product-card{
+    display: flex;
+}
+
+.product-card img {
+    margin-top: 50px;
+    max-width: 400px;
+    display: flex;
+    margin-left: 200px;
+}
+
+.mainText{
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.mainText h5{
+    font-size: 14px;
+    color: #db0577;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+
+.mainText h1{
+    color: #474747;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.mainText p{
+    width: 65%;
+    line-height: 150%;
+    letter-spacing: 0.75px; 
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+}
+
+.mainText button {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+    width: 180px;
+    height: 40px;
+    border: none;
+    background-color: #db0577;
+    outline: none;
+    border-radius: 12px;
+    font-weight: 700; 
+    letter-spacing: 0.75px; 
+}

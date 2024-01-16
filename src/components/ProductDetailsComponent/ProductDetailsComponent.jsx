@@ -6,7 +6,7 @@ export const ProductDetailsComponent = () => {
 
     return (
         <>
-            <div className='Prin'>
+            <div className='details-container'>
                 <div> 
                     <h3>Tênis Nike Revolution 6 Next Nature Masculino</h3>
                 </div>
@@ -39,11 +39,12 @@ export const ProductDetailsComponent = () => {
                         <span>4.7</span>
                         <img src={blankStar} alt="" />
                     </div>
+                    <p>(90 avaliações)</p>
                 </div>
-            </div>
-            <div>
-                <h3>Descrição do produto</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div className='product-description'>
+                    <h3>Descrição do produto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
             </div>
         </>
     )

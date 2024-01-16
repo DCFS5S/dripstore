@@ -33,16 +33,47 @@ line-height: 18px;
 letter-spacing: 0.5px;
 }
 .star1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 
+p {
+    color: var(--light-gray, #8F8F8F);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.25px;
 }
 
 .rate {
-    display: flex;
+    display: inline-flex;
     background: #F6AA1C;
     border-radius: 4px;
     justify-content: space-around;
     align-items: center;
     width: 63px;
     padding: 6px 10px;
-    
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.25px;
+}
+
+.product-description {
+    color: var(--dark-gray-2, #474747);
+    width: 440px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.25px;
 }
