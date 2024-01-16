@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './LoginPage.css'
+import '../LoginPage/LoginPage.css'
 import { MainFooter } from '../MainFooter/MainFooter'
 
 export const LoginPage = () => {
