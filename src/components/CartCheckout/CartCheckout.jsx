@@ -4,7 +4,7 @@ import productsData from "../../../products.json"
 import { CartCheckoutResume } from './CartCheckoutResume'
 import { CartCheckoutProduct } from './CartCheckoutProduct'
 
-export const CartCheckout = ({ price, quantidade }) => {
+export const CartCheckout = () => {
     const [items, setItems] = useState([])
     
     const loadCartItems = async () => {
