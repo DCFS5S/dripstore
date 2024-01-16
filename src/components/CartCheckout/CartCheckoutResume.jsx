@@ -20,7 +20,7 @@ export const CartCheckoutResume = ({ total }) => {
 
           <div className='right-itens right-itens-text'>
             <p className='card'>Desconto: </p>
-            <p className='resume-price'><span>R$</span> <span>30,00</span></p>
+            <p className='resume-price'><span>R$</span> <span>0,00</span></p>
           </div>
 
           <div className='total-item total-item-text'>
