@@ -1,23 +1,18 @@
 import { useState } from 'react'
 import './CartCheckout.css'
 
-export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldPrice, onRemove }) => {
-    const [quantidade, setQuantidade] = useState(1)
-
-    const handleMinusClick = () => {
-        if (quantidade > 1) {
-            setQuantidade(quantidade - 1)
-        }
-    }
-
-    const handlePlusClick = () => {
-        setQuantidade(quantidade + 1)
-    }
-
-    const showVariable = () => {
-        alert(quantidade)
-    }
-
+export const CartCheckoutProduct = ({
+    ID,
+    name,
+    imgSrc,
+    color,
+    size,
+    price,
+    oldPrice,
+    amount,
+    onRemove,
+    onChangeAmount,
+}) => {
     const handleRemoveItem = async () => {
         const hasUserConfirmed = confirm('Tem certeza que deseja remover o item?')
         if (hasUserConfirmed) {
@@ -28,14 +23,14 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
 
     const calculateTotal = () => {
         const priceNumber = parseFloat(price)
-        const quantidadeNumber = parseInt(quantidade)
+        const quantidadeNumber = amount
         return priceNumber * quantidadeNumber
     }
 
 
     const calculateOldPriceTotal = () => {
         const oldPriceNumber = parseFloat(oldPrice)
-        const quantidadeNumber = parseInt(quantidade)
+        const quantidadeNumber = amount
         return oldPriceNumber * quantidadeNumber
     }
 
@@ -54,9 +49,9 @@ export const CartCheckoutProduct = ({ ID, name, imgSrc, color, size, price, oldP
             </div>
             <div className='sub-container right-container'>
                 <div className='right-item'>
-                    <button onClick={handleMinusClick}>-</button>
-                        <span className='show-variable' onClick={showVariable}> {quantidade} </span>
-                    <button onClick={handlePlusClick}>+</button>
+                    <button disabled={amount === 1} onClick={() => onChangeAmount(ID, amount - 1)}>-</button>
+                        <span className='show-variable'>{amount}</span>
+                    <button onClick={() => onChangeAmount(ID, amount + 1)}>+</button>
                     <button onClick={handleRemoveItem} className="remove-button">Remover item</button>
                 </div>
                 <div className='right-item'>

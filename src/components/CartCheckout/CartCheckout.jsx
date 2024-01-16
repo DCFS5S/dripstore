@@ -16,6 +16,7 @@ export const CartCheckout = () => {
                 const product = productsData.find(product => product.id === cartItem.productId)
                 return {
                     ...product,
+                    amount: 1,
                     ID: cartItem.id,
                 }
             }
@@ -31,11 +32,27 @@ export const CartCheckout = () => {
     let total = 0
 
     items.forEach(item => {
-        total += item.price
+        total += item.price * item.amount
     })
 
     return total
    }
+
+    const handleChangeAmount = (ID, newAmount) => {
+        const newItems = items.map(item => {
+            if (item.ID === ID && newAmount > 0) {
+                return {
+                    ...item,
+                    amount: newAmount
+                }
+            }
+
+            return item
+        })
+
+        setItems(newItems)        
+    }
+
 
     return (
         <div className='cart-checkout'>
@@ -60,11 +77,14 @@ export const CartCheckout = () => {
                             color="Vermelho / Branco"
                             size="42"
                             price={item.price}
+                            amount={item.amount}
                             {...(item.discount > 0 ? { oldPrice: (item.price / (1 - item.discount / 100))} : null)}
                             onRemove={loadCartItems}
+                            onChangeAmount={handleChangeAmount}
                         />
                     ))}
                 </section>
+                
                 <div className='discount-container'>
                     <div className='left-container inputs-container'>
                         <p className='text-style'>Cupom de desconto</p>
