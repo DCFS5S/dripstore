@@ -6,12 +6,12 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
-import { CartCheckList } from './components/CartCheckList/CartCheckList'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 import { MyAccount } from './pages/MyAccount/MyAccount'
-import { MyProfile } from './pages/MyAccount/components/MyProfile/MyProfile'
-import { MyOrders } from './pages/MyAccount/components/MyOrders/MyOrders'
-import { MyInfos } from './pages/MyAccount/components/MyInfos/MyInfos'
+import { MyProfile } from './pages/MyAccount/MyProfile/MyProfile'
+import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
+import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
+import { Pgto } from './pages/MyAccount/Pgto/Pgto'
 
 const router = createBrowserRouter([
   {
@@ -20,17 +20,19 @@ const router = createBrowserRouter([
   },
   {
     path: '/carrinho',
-    element: <CartCheckList
-      name="Tênis Nike Revolution 6 Next Nature Masculino"
-      color="Vermelho / Branco"
-      size="42"
-      price="219,00"
-      oldPrice="219,00"
-    />,
+    element: <h1>corrigir</h1>,
+  },
+  {
+    path: '/produto/:id',
+    element: <h1>corrigir</h1>
   },
   {
     path: '/criar-conta',
     element: <CreateAccount />
+  },
+  {
+    path: '/login',
+    element: <h1>corrigir</h1>
   },
   {
     path: '/meus-pedidos',
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'metodos-de-pagamento',
-        element: <h1>Métodos de Pagamento</h1>
+        element: <Pgto />
       },
     ]
   },

@@ -42,7 +42,7 @@ export const CreateAccount = () => {
         <div className="info-content">
           <p>Informações Pessoais</p>
           <hr />
-          <label htmlFor="nomecompleto">Nome Completo *</label>
+          <label htmlFor="nome-completo">Nome Completo *</label>
           <input 
             name='nomeCompleto'
             placeholder="Insira seu nome"

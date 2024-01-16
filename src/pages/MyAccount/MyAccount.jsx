@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { Sidebar } from "./components/Sidebar/Sidebar";
+import { Sidebar } from "./Sidebar/Sidebar";
 import { useEffect } from "react";
 import "./MyAccount.css";
 
@@ -12,13 +12,14 @@ export const MyAccount = () => {
 
   return (
     <>
-      <div className="account-test">
+      <div>
         <section className="account-container">
           <Sidebar />
 
           <div className="account-content">
             <Outlet />
           </div>
+
         </section>
       </div>
     </>
