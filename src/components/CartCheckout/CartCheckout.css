@@ -216,10 +216,15 @@ span.show-variable {
     letter-spacing: 0.75px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .resume-container {
     width: 28%;
+}
+
+.ok-button:hover {
+    background-color:  rgb(236, 236, 236);
 }
 
 
