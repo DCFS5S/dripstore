@@ -23,16 +23,8 @@ const router = createBrowserRouter([
     element: <h1>corrigir</h1>,
   },
   {
-    path: '/produto/:id',
-    element: <h1>corrigir</h1>
-  },
-  {
     path: '/criar-conta',
     element: <CreateAccount />
-  },
-  {
-    path: '/login',
-    element: <h1>corrigir</h1>
   },
   {
     path: '/meus-pedidos',
