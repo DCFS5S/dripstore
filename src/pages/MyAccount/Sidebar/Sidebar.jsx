@@ -27,7 +27,7 @@ export const Sidebar = () => {
             <hr />
           </li>
           <li>
-            <Link to="metodos-de-pagamento" className={location.pathname === '/meus-pedidos/metodos-de-pagamento' ? 'active' : ''}>Métodos de Pagamento</Link>
+            <Link to="metodos-de-pagamento/page-cartao1" className={location.pathname === '/meus-pedidos/metodos-de-pagamento/page-cartao1' ? 'active' : ''}>Métodos de Pagamento</Link>
           </li>
         </ul>
       </div>
