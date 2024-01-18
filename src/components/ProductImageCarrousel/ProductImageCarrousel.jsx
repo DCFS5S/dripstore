@@ -6,7 +6,11 @@ const product = products[0]
 
 
 export const ProductImageCarrousel = () => {
-    const [currentSrc,setCurrentSrc] = useState(product.images[0])
+    const [currentSrc,setCurrentSrc] = useState({
+        index: 0,
+        src: product.images[0]
+    })
+    
 
     return (
         <div className='carrouselContainer'>
@@ -14,13 +18,27 @@ export const ProductImageCarrousel = () => {
                 <button
                     className='sliderArrows'
                     onClick={() => {
-                        const index = product.images.indexOf(currentSrc) - 1
-                        setCurrentSrc(product.images[index])
+                        if (currentSrc.index > 0) {
+                            const index = currentSrc.index - 1
+                            setCurrentSrc({
+                                index,
+                                src: product.images[index]
+                            })
+                        }
                     }}
                 ></button>
-                <img src={currentSrc} alt="" />
+                <img src={currentSrc.src} alt="" />
                 <button
                     className='sliderArrows right'
+                    onClick={() => {
+                        if (currentSrc.index < product.images.length-1) {
+                            const index = currentSrc.index + 1
+                            setCurrentSrc({
+                                index,
+                                src: product.images[index]
+                            })
+                    }
+                }}
                 ></button>
             </div>
             <div className='galleryImages'>
@@ -28,7 +46,7 @@ export const ProductImageCarrousel = () => {
                     <img
                         key={index}
                         src={imageSrc}
-                        onClick={() => setCurrentSrc(imageSrc)}
+                        onClick={() => setCurrentSrc([index, imageSrc])}
                     />
                 )}
             </div>

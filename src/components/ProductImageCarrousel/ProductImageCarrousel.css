@@ -14,16 +14,14 @@
     width: calc((100% - 112px)/5);
     aspect-ratio: 1.22;
     object-fit: cover;
-    
 }
 
 .currentImage img {
     width: 100%;
     aspect-ratio: 1.22;
-    object-fit: contain;
-    background-color: #E2E3FF;
+    object-fit: cover;
     border-radius: 4px;
-    padding: 50px;
+    margin-bottom: 20px;
 }
 .sliderArrows{
     position: absolute;
@@ -45,3 +43,4 @@
 .currentImage{
     position: relative;
 }
+
