@@ -1,0 +1,23 @@
+.product-list {
+  background-color: #f9f8fE;
+}
+
+.topo-product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.product-list a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.product-list a:hover {
+  text-decoration: underline;
+}

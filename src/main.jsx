@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
 import { CartCheckList } from './components/CartCheckList/CartCheckList'
+import { ProductDetailsPage } from './pages/ProductDetailsPage/ProductDetailsPage'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       oldPrice="219,00"
     />,
   },
+  {
+    path: '/product/:productName',
+    element: <ProductDetailsPage />,
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
