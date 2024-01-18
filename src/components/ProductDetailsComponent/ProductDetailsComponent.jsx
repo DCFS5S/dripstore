@@ -41,10 +41,44 @@ export const ProductDetailsComponent = () => {
                     </div>
                     <p>(90 avaliações)</p>
                 </div>
+                <p className='money'>
+                    <span className='currency'>R$</span>
+                    219,00
+                    <span className='old-price'>220,00</span>
+                </p>
                 <div className='product-description'>
                     <h3>Descrição do produto</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 </div>
+                <p>Tamanho</p>
+                <label>
+                    <input type="radio" name="size" value={39} checked/>
+                    39
+                </label>
+                <label>
+                    <input type="radio" name="size" value={40}/>
+                    40
+                </label>
+                <label>
+                    <input type="radio" name="size" value={41}/>
+                    41
+                </label>
+                <label>
+                    <input type="radio" name="size" value={42}/>
+                    42
+                </label>
+                <label>
+                    <input type="radio" name="size" value={43}/>
+                    43
+                </label>
+                <p>Cor</p>
+                <div className='colors'>
+                    <div className='color'></div>
+                    <div className='color'></div>
+                    <div className='color'></div>
+                    <div className='color'></div>
+                </div>
+                <button className='buy'>COMPRAR</button>
             </div>
         </>
     )
