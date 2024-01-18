@@ -33,6 +33,8 @@
     border-bottom: 3px solid black;
     aspect-ratio: 1;
     margin: 10px;
+    cursor: pointer;
+    width: 15px;
 }
 .sliderArrows.right {
     right: 0;

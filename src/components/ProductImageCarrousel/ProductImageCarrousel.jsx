@@ -46,7 +46,10 @@ export const ProductImageCarrousel = () => {
                     <img
                         key={index}
                         src={imageSrc}
-                        onClick={() => setCurrentSrc([index, imageSrc])}
+                        onClick={() => setCurrentSrc({
+                            index,
+                            src: imageSrc
+                        })}
                     />
                 )}
             </div>
