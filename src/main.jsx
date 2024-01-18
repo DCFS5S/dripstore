@@ -13,7 +13,7 @@ import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
 import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
 import { PaymentMethods } from './pages/MyAccount/PaymentMethods/PaymentMethods'
 import { PageCartao1 } from './pages/MyAccount/PaymentMethods/PageCartao1/PageCartao1'
-import { PageCartao2 } from './pages/MyAccount/PaymentMethods/PageCartao2/PageCartao2'
+import { PurchaseConfirmation } from './pages/PurchaseConfirmation/PurchaseConfirmation'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/carrinho',
     element: <h1>corrigir</h1>,
+  },
+  {
+    path: 'pagina-de-sucesso',
+    element: <PurchaseConfirmation />
   },
   {
     path: '/criar-conta',
@@ -44,6 +48,7 @@ const router = createBrowserRouter([
         path: 'minhas-informacoes',
         element: <MyInfos />
       },
+     
       {
         path: 'metodos-de-pagamento',
         element: <PaymentMethods />,
