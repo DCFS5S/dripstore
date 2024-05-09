@@ -1,52 +1,60 @@
 [
   {
-    "category": "Tenis",
+    "id": "1",
+    "category": "Tênis",
     "discount": 30,
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 200
+    "name": "Nike Air Max - Masculino",
+    "price": 250
   },
   {
-    "category": "Tenis",
+    "id": "2",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 100
+    "name": "Adidas Ultraboost - Masculino",
+    "price": 120
   },
   {
-    "category": "Tenis",
+    "id": "3",
+    "category": "Tênis",
     "discount": 20,
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 100
+    "name": "Puma RS-X - Masculino",
+    "price": 110
   },
   {
-    "category": "Tenis",
+    "id": "4",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 100
+    "name": "New Balance 990 - Masculino",
+    "price": 130
   },
   {
-    "category": "Tenis",
+    "id": "5",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 100
+    "name": "Vans Old Skool - Masculino",
+    "price": 90
   },
   {
-    "category": "Tenis",
+    "id": "6",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 300
+    "name": "Reebok Classic - Masculino",
+    "price": 280
   },
   {
-    "category": "Tenis",
+    "id": "7",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
-    "price": 300
+    "name": "Converse Chuck Taylor - Masculino",
+    "price": 320
   },
   {
-    "category": "Tenis",
+    "id": "8",
+    "category": "Tênis",
     "imgSrc": "/assets/img/featured-product.png",
-    "name": "K-Swiss V8 - Masculino",
+    "name": "Asics Gel-Kayano - Masculino",
     "price": 300
   }
 ]

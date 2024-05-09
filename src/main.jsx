@@ -6,6 +6,8 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { HomePage } from './pages/HomePage/HomePage'
+import { CartCheckout } from './components/CartCheckout/CartCheckout'
+import { ProductDetails } from './pages/ProductDetails/ProductDetails'
 import { CreateAccount } from './pages/CreateAccount/CreateAccount'
 import { MyAccount } from './pages/MyAccount/MyAccount'
 import { MyProfile } from './pages/MyAccount/MyProfile/MyProfile'
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/carrinho',
-    element: <h1>corrigir</h1>,
+    element: <CartCheckout />,
+  },
+  {
+    path: '/produto/:id',
+    element: <ProductDetails />
   },
   {
     path: '/criar-conta',

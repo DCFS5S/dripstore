@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.cart-list {
+    width: 316px;
+}
+
+.cart-list-header {
+    padding: 30px 30px 20px 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.cart-list-header h4 {
+    color: #474747;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+}
+
+.cart-list-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.cart-list-product-component {
+    display: block;
+}
+
+.cart-product-image {
+    width: 71px;
+    height: 58px;
+}
+
+.cart-list-footer {
+    padding-top: 20px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.text-name {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    letter-spacing: 0.75px;
+    padding-bottom: 10px;
+}
+
+.text-price {
+    color: #474747;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.75px;
+}
+
+.text-old-price {
+    color: #CCCCCC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.75px;
+    text-decoration: line-through;
+}
+
+.container-valor {
+    padding-bottom: 20px;
+}
+
+.text-valor {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.75px;
+    margin-right: 120px;
+}
+
+.text-total-price {
+    color: #EE4266;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.75px;
+}
+
+.esvaziar-button {
+    color: #474747;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.25px;
+    text-decoration-line: underline;
+    border: none;
+    margin-right: 105px;
+}
+
+.ver-carrinho-button {
+    width: 125px;
+    height: 40px;
+    background-color: #C92071;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    border-radius: 10px;
+}
