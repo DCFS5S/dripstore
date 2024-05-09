@@ -13,7 +13,7 @@ import { MyOrders } from './pages/MyAccount/MyOrders/MyOrders'
 import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
 import { PaymentMethods } from './pages/MyAccount/PaymentMethods/PaymentMethods'
 import { PageCartao1 } from './pages/MyAccount/PaymentMethods/PageCartao1/PageCartao1'
-import { PageCartao2 } from './pages/MyAccount/PaymentMethods/PageCartao2/PageCartao2'
+import { LoginPage } from './components/LoginPage/LoginPage'
 
 const router = createBrowserRouter([
   {
@@ -56,6 +56,10 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: '/login',
+    element: <LoginPage/>,
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
