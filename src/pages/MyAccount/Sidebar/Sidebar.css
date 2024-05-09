@@ -1,0 +1,26 @@
+.sidebar-container {
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.sidebar-container li {
+  list-style: none;
+  padding: 10px;
+}
+
+.sidebar-container hr {
+  margin-top: 10px;
+}
+
+.sidebar-container a {
+  color: #474747;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar-container a.active {
+  color: #c92071;
+  font-weight: bold;
+}

@@ -1,3 +1,9 @@
+body {
+    background: #F9F8FE;
+    height: auto;
+    overflow-x: hidden;
+}
+
 .product-list {
   background-color: #f9f8fE;
 }

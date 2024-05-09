@@ -1,0 +1,100 @@
+body {
+  background-color: #f9f8fe;
+}
+
+.create-account-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 153px;
+}
+
+.create-account-content {
+  width: 750px;
+}
+
+.create-account-content h3 {
+  font-size: 32px;
+  padding-bottom: 22px;
+}
+
+.info-content p {
+  color: #474747;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  padding: 0 0 20px;
+}
+
+.create-account-content label {
+  color: #474747;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+}
+
+.info-content {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.create-account-container label {
+  padding-top: 0px;
+  display: flex;
+  padding-top: 20px;
+}
+
+.info-content input {
+  border: none;
+  background-color: #f8f8f8;
+  padding: 16px 10px;
+  width: 690px;
+  height: 60px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  /* opacity: 0.04; */
+}
+
+.info-content input::placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+}
+
+.notification {
+  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: baseline;
+}
+
+.notification p {
+  color: #474747;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.25;
+}
+
+.create-account-container button {
+  background-color: #c92071;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  padding: 11px;
+  border-radius: 8px;
+  width: 100%;
+}
