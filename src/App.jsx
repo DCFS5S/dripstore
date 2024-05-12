@@ -1,10 +1,10 @@
-import './App.css'
 import { HomePage } from './pages/HomePage/HomePage'
+import './App.css'
 
 export function App() {
   return (
     <>
-      <Home3Page />
+      <HomePage />
     </>
   )
 }
