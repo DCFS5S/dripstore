@@ -27,14 +27,15 @@ export const Header = () => {
                     <span>2</span>
                 </Link>
             </div>
-                <nav className="main-header-menu">
-                    <ul>
-                        <li> <a className="home-bar" href="">Home</a></li>
-                        <li> <a className="home-bar" href="">Produtos</a></li>
-                        <li> <a className="home-bar" href="">Categorias</a></li>
-                        <li> <a className="home-bar" href="">Meus pedidos</a></li>  
-                    </ul>
-                </nav>
+            
+            <nav className="main-header-menu">
+                <ul>
+                    <li><Link to='/' className='home-bar'>Home</Link></li>
+                    <li><Link to='/produtos' className='home-bar'>Produtos</Link></li>
+                    <li><Link to='/categorias' className='home-bar'>Categorias</Link></li>
+                    <li><Link to='/meus-pedidos' className='home-bar'>Meus Pedidos</Link></li>
+                </ul>
+            </nav>
         </div>
     )
 }
