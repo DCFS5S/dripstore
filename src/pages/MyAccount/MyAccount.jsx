@@ -1,6 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import { Sidebar } from "./Sidebar/Sidebar";
 import { useEffect } from "react";
+import { Header } from "../../components/Header/Header";
 import "./MyAccount.css";
 
 export const MyAccount = () => {
@@ -13,6 +14,7 @@ export const MyAccount = () => {
   return (
     <>
       <div>
+        <Header />
         <section className="account-container">
           <Sidebar />
 
