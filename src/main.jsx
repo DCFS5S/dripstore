@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,11 +15,17 @@ import { MyInfos } from './pages/MyAccount/MyInfos/MyInfos'
 import { PaymentMethods } from './pages/MyAccount/PaymentMethods/PaymentMethods'
 import { PageCartao1 } from './pages/MyAccount/PaymentMethods/PageCartao1/PageCartao1'
 import { LoginPage } from './components/LoginPage/LoginPage'
+import { CartPage } from './pages/CartPage/CartPage'
+import './index.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
+  },
+  {
+    path: '/carrinho',
+    element: <CartPage />,
   },
   {
     path: '/carrinho',
