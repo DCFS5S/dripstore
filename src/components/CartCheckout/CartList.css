@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .cart-list {
+    background-color: white;
     width: 316px;
+    position: absolute;
+    right: 30px;
+    top: 90px;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.119);
 }
 
 .cart-list-header {

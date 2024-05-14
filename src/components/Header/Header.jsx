@@ -1,6 +1,14 @@
 import './Header.css'
+import { CartList } from '../CartCheckout/CartList'
+import { useState } from 'react'
 
 export const Header = () => {
+    const [showCartList, setShowCartList] = useState(false)
+    
+    const toggleCartList = () => {
+         setShowCartList(!showCartList)
+    }
+    
     return (
         <div className="main-header">
              <div className="main-header-content">
@@ -11,7 +19,7 @@ export const Header = () => {
             </div>
                 <a href="" className="register-link">Cadastre-se</a>
                 <a href="" className="button" >Entrar</a>
-                <button className="kart-button">
+                <button onClick={toggleCartList} className="kart-button">
                 <a href="#"><img src="../../src/assets/Buy.svg" alt="" /></a>
                 <span>2</span>
                 </button>
@@ -24,6 +32,7 @@ export const Header = () => {
                         <li> <a className="home-bar" href="">Meus pedidos</a></li>  
                     </ul>
                 </nav>
+                {showCartList && <CartList />}
         </div>
     )
 }
