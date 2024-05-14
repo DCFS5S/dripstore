@@ -1,14 +1,20 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 import { CartList } from '../CartCheckout/CartList'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const Header = () => {
     const [showCartList, setShowCartList] = useState(false)
     
-    const toggleCartList = () => {
-         setShowCartList(!showCartList)
+    const toggleCartList = (event) => {
+        event.stopPropagation()
+        setShowCartList(!showCartList)
     }
+
+    useEffect(() => {
+        document.body.addEventListener('click', toggleCartList)
+    }, [])
+
     
     return (
         <div className="main-header">
@@ -30,10 +36,10 @@ export const Header = () => {
                     Entrar
                 </Link>
 
-                <Link to='/carrinho' onClick={toggleCartList}  className='kart-button'>
+                <button onClick={toggleCartList}  className='kart-button'>
                     <img src="../../src/assets/Buy.svg" alt="Carrinho" />
                     <span>2</span>
-                </Link>
+                </button>
             </div>
 
             <nav className="main-header-menu">

@@ -3,8 +3,12 @@ import { CartListProduct } from './CartListProduct'
 
 
 export const CartList = () => {
+  const handleClick = (event) => {
+    event.stopPropagation();
+  }
+
   return (
-    <div className='cart-list'>
+    <div className='cart-list' onClick={handleClick}>
         <div className="cart-list-header">
             <h4>Meu Carrinho</h4>
         </div>
