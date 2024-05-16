@@ -1,11 +1,29 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
-import { CartList } from '../CartCheckout/CartList'
+import { CartWindow } from '../CartCheckout/CartWindow'
 import { useEffect, useState, useRef } from 'react'
 
 export const Header = () => {
     const [showCartList, setShowCartList] = useState(false)
+    const [cartItems, setCartItems] = useState([])
+    const [total, setTotal] = useState(0)
     const cartListRef = useRef(null)
+
+    const fetchCartData = async () => {
+        try {
+            const response = await fetch('https://6578d273f08799dc804619b0.mockapi.io/api/v1/cart')
+            const cartData = await response.json()
+            const cartTotal = cartData.reduce((acc, item) => acc + (item.price * item.amount), 0)
+            setTotal(cartTotal);
+            setCartItems(cartData);
+        } catch (error) {
+            console.error('Erro ao buscar os dados do carrinho:', error)
+        }
+    }
+
+    useEffect(() => {
+        fetchCartData()
+    }, [])
     
     const toggleCartList = (event) => {
         event.stopPropagation()
@@ -61,7 +79,7 @@ export const Header = () => {
             </nav>
             {showCartList && (
                 <div ref={cartListRef}>
-                    <CartList />
+                    <CartWindow items={cartItems} total={total}/>
                 </div>
             )}
         </div>
