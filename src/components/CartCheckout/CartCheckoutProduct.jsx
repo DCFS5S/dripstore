@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './CartCheckout.css'
 
 export const CartCheckoutProduct = ({
@@ -81,5 +80,3 @@ export const CartCheckoutProduct = ({
     </div>
   )
 }
-
-
