@@ -3,6 +3,7 @@ import { HeaderClean } from "../../components/HeaderClean/HeaderClean";
 import "./CreateAccount.css";
 import { useEffect } from "react";
 import { Popup } from "../../components/Popup/Popup";
+import { apiRequest } from "../../service/apiRequest";
 
 export const CreateAccount = () => {
 
@@ -17,13 +18,6 @@ export const CreateAccount = () => {
     localStorage.setItem('formData', JSON.stringify(formData))
   }, [formData])
 
-  const handleInputChange = (e) => {
-    const {name, value} = e.target
-    setFormData({
-      ...formData,
-      [name]: value,
-    })
-  }
 
   const handleCreateAccount = () => {
     setModalIsOpen(true)
@@ -33,32 +27,69 @@ export const CreateAccount = () => {
     setModalIsOpen(false)
   }
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const formDataJson = Object.fromEntries(formData.entries());
+
+    apiRequest({
+        method: 'POST',
+        data: formDataJson,
+        path: '/users',
+    })
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+  }
+
   return (
     <>
     <HeaderClean />
     <section className="create-account-container">
-      <section className="create-account-content">
+      <form className="create-account-content" onSubmit={handleSubmit}>
         <h3>Criar conta</h3>
         <div className="info-content">
           <p>Informações Pessoais</p>
           <hr />
-          <label htmlFor="nome-completo">Nome Completo *</label>
+          <label htmlFor="name">Nome Completo *</label>
           <input 
-            name='nomeCompleto'
+            id="name"
+            name='name'
             placeholder="Insira seu nome"
             type="text"
-            value={formData.nomeCompleto}
-            onChange={handleInputChange}
           />
 
           <label htmlFor="cpf">CPF *</label>
-          <input placeholder="Insira seu CPF" type="text" />
+          <input
+            id="cpf"
+            name="cpf"
+            placeholder="Insira seu CPF"
+            type="text"
+          />
 
           <label htmlFor="email">E-mail *</label>
-          <input placeholder="Insira seu email" type="text" />
+          <input
+            id="email"
+            name="email"
+            placeholder="Insira seu email"
+            type="text"
+          />
 
-          <label htmlFor="celular">Celular *</label>
-          <input placeholder="Insira seu celular" type="text" />
+          <label htmlFor="phone">Celular *</label>
+          <input
+            id="phone"
+            name="phone"
+            placeholder="Insira seu celular"
+            type="text"
+          />
+          
+          <label htmlFor="password">Senha *</label>
+          <input
+            id="password"
+            name="password"
+            placeholder="Insira sua senha"
+            type="password"
+          />
         </div>
 
         <div className="info-content">
@@ -88,8 +119,7 @@ export const CreateAccount = () => {
         </div>
 
         <button onClick={handleCreateAccount}>Criar conta</button>
-      </section>
-
+      </form>
     </section>
 
     <Popup 
