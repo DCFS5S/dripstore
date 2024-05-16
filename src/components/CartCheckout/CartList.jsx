@@ -17,9 +17,14 @@ export const CartList = () => {
            <CartListProduct />
         </div>
         <div className="cart-list-footer">
-            <p className='container-valor'><span className='text-valor'>Valor Total:</span> <span className='text-total-price'>R$ <span className='text-total-price'>219,00</span></span></p>
-            <button className='esvaziar-button'>Esvaziar</button>
-            <button className='ver-carrinho-button'>Ver Carrinho</button>
+            <div className='price-container'>
+              <p className='container-valor'><span className='text-valor'>Valor Total:</span></p>
+              <p><span className='text-total-price'>R$ <span className='text-total-price'>219,00</span></span></p>
+            </div>
+            <div className='btns-cart-list'>
+              <button className='esvaziar-button'>Esvaziar</button>
+              <button className='ver-carrinho-button'>Ver Carrinho</button>
+            </div>
         </div>
     </div>
   )

@@ -2,7 +2,8 @@
 
 .cart-list {
     background-color: white;
-    width: 316px;
+    padding: 30px;
+    max-width: 356px;
     position: absolute;
     right: 30px;
     top: 70px;
@@ -12,7 +13,7 @@
 }
 
 .cart-list-header {
-    padding: 30px 30px 20px 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #CCCCCC;
 }
 
@@ -35,6 +36,10 @@
 
 .cart-list-product-component {
     display: block;
+}
+
+.cart-product-information {
+    margin-left: 20px;
 }
 
 .cart-product-image {
@@ -93,7 +98,6 @@
     font-weight: 700;
     line-height: 24px; 
     letter-spacing: 0.75px;
-    margin-right: 120px;
 }
 
 .text-total-price {
@@ -117,7 +121,6 @@
     letter-spacing: 0.25px;
     text-decoration-line: underline;
     border: none;
-    margin-right: 105px;
 }
 
 .ver-carrinho-button {
@@ -133,4 +136,17 @@
     line-height: 22px;
     letter-spacing: 0.75px;
     border-radius: 10px;
+}
+
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns-cart-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
