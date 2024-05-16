@@ -38,5 +38,3 @@ export const CartCheckoutResume = ({ total }) => {
     </div>
   )
 }
-
-

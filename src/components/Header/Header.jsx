@@ -1,7 +1,30 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
+import { CartList } from '../CartCheckout/CartList'
+import { useEffect, useState, useRef } from 'react'
 
 export const Header = () => {
+    const [showCartList, setShowCartList] = useState(false)
+    const cartListRef = useRef(null)
+    
+    const toggleCartList = (event) => {
+        event.stopPropagation()
+        setShowCartList(!showCartList)
+    }
+
+    const handleClickOutside = (event) => {
+        if (cartListRef.current && !cartListRef.current.contains(event.target)) {
+            setShowCartList(false)
+        }
+    }
+
+    useEffect(() => {
+        document.body.addEventListener('click', handleClickOutside)
+        return () => {
+            document.body.removeEventListener('click', handleClickOutside)
+        }
+    }, [])
+
     return (
         <div className="main-header">
             <div className="main-header-content">
@@ -22,12 +45,12 @@ export const Header = () => {
                     Entrar
                 </Link>
 
-                <Link to='/carrinho' className='kart-button'>
+                <button onClick={toggleCartList}  className='kart-button'>
                     <img src="../../src/assets/Buy.svg" alt="Carrinho" />
                     <span>2</span>
-                </Link>
+                </button>
             </div>
-            
+
             <nav className="main-header-menu">
                 <ul>
                     <li><Link to='/' className='home-bar'>Home</Link></li>
@@ -36,6 +59,11 @@ export const Header = () => {
                     <li><Link to='/meus-pedidos' className='home-bar'>Meus Pedidos</Link></li>
                 </ul>
             </nav>
+            {showCartList && (
+                <div ref={cartListRef}>
+                    <CartList />
+                </div>
+            )}
         </div>
     )
 }

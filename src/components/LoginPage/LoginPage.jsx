@@ -53,16 +53,16 @@ export const LoginPage = () => {
             <div className='login-body'>
                 <div>
                     <label className='labels' htmlFor="username">Login*</label>
-                    <input type="text" value={username} onChange={handleUsernameChange} placeholder='Insira seu login ou email' />
+                    <input className='input' type="text" value={username} onChange={handleUsernameChange} placeholder='Insira seu login ou email' />
                 </div>
                 <div> 
                     <label className='labels' htmlFor="password">Senha*</label>
-                    <input type="password" value={password} name="password" id="pass" onChange={handlePasswordChange} minLength={8} required placeholder='Insira sua senha' />
+                    <input className='inputs' type="password" value={password} name="password" id="pass" onChange={handlePasswordChange} minLength={8} required placeholder='Insira sua senha' />
                 </div>
                 <div className='new-password'>
                     <a className='forgot-password' href="#">Esqueci minha senha</a>
                 </div>
-                <button type='submit' onClick={enviarFormulario}>Acessar Conta</button>
+                <button className='btnAcessar' type='submit' onClick={enviarFormulario}>Acessar Conta</button>
             </div>
             <div className='login-footer'>
                 <h4>Ou faça login com</h4>
