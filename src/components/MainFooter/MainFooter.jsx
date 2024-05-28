@@ -1,4 +1,5 @@
 import './MainFooter.css'
+import { Link } from 'react-router-dom'
 
 export const MainFooter = () => {
     return (
@@ -10,20 +11,20 @@ export const MainFooter = () => {
                     adipiscing elit, sed do eiusmod tempor <br />
                     incididunt ut labore et dolore.</p>
                     <div className='image-links'>
-                        <a href="https://facebook.com/dripstore"><img src="../../src/assets/icon-facebook.png" alt="" /></a>
-                        <a href="https://instagram.com/dripstore"><img src="../../src/assets/icon-instagram.png" alt="" /></a>
-                        <a href="https://twitter.com/dripstore"><img src="../../src/assets/icon-twitterx.png" alt="" /></a>
+                        <a target="_blank" href="https://facebook.com/dripstore"><img src="../../src/assets/icon-facebook.png" alt="" /></a>
+                        <a target="_blank" href="https://instagram.com/dripstore"><img src="../../src/assets/icon-instagram.png" alt="" /></a>
+                        <a target="_blank"href="https://twitter.com/dripstore"><img src="../../src/assets/icon-twitterx.png" alt="" /></a>
                     </div>
                 </div>
                 <div className="footer-colum-informacao">
                     <h4>Informação</h4>
                         <ul>
-                            <li><a href="/sobre">Sobre Drip Store</a></li>
-                            <li><a href="/privacidade">Segurança</a></li>
-                            <li><a href="/lista-desejos">Wishlist</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
-                            <li><a href="/meus-pedidos">Meus Pedidos</a></li>
+                            <li><Link href="/sobre">Sobre Drip Store</Link></li>
+                            <li><Link href="/privacidade">Segurança</Link></li>
+                            <li><Link href="/lista-desejos">Wishlist</Link></li>
+                            <li><Link href="/blog">Blog</Link></li>
+                            <li><Link href="/trabalhe-conosco">Trabalhe conosco</Link></li>
+                            <li><Link href="/meus-pedidos">Meus Pedidos</Link></li>
                         </ul>
                 </div>
                 <div className="footer-colum-informacao">
