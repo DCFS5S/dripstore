@@ -1,5 +1,6 @@
 import './MainFooter.css'
 import { Link } from 'react-router-dom'
+<Link to='/'>Home</Link>
 
 export const MainFooter = () => {
     return (
@@ -19,12 +20,12 @@ export const MainFooter = () => {
                 <div className="footer-colum-informacao">
                     <h4>Informação</h4>
                         <ul>
-                            <li><Link href="/sobre">Sobre Drip Store</Link></li>
-                            <li><Link href="/privacidade">Segurança</Link></li>
-                            <li><Link href="/lista-desejos">Wishlist</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
-                            <li><Link href="/trabalhe-conosco">Trabalhe conosco</Link></li>
-                            <li><Link href="/meus-pedidos">Meus Pedidos</Link></li>
+                            <li><Link to="/sobre">Sobre Drip Store</Link></li>
+                            <li><Link to="/privacidade">Segurança</Link></li>
+                            <li><Link to="/lista-desejos">Wishlist</Link></li>
+                            <li><Link to="/blog">Blog</Link></li>
+                            <li><Link to="/trabalhe-conosco">Trabalhe conosco</Link></li>
+                            <li><Link to="/meus-pedidos">Meus Pedidos</Link></li>
                         </ul>
                 </div>
                 <div className="footer-colum-informacao">
