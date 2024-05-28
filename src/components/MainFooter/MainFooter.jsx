@@ -30,11 +30,11 @@ export const MainFooter = () => {
                 <div className="footer-colum-informacao">
                     <h4>Categorias</h4>
                         <ul>
-                            <li><a href="#">Camisetas</a></li>
-                            <li><a href="#">Calças</a></li>
-                            <li><a href="#">Bonés</a></li>
-                            <li><a href="#">Headphones</a></li>
-                            <li><a href="#">Tênis</a></li>
+                            <li><Link to="/camisetas">Camisetas</Link></li>
+                            <li><Link to="/calças">Calças</Link></li>
+                            <li><Link to="/bones">Bonés</Link></li>
+                            <li><Link to="/fone-de-ouvido">Headphones</Link></li>
+                            <li><Link to="/tenis">Tênis</Link></li>
                         </ul>
                 </div>
                 <div className="footer-colum-contato">
@@ -42,7 +42,7 @@ export const MainFooter = () => {
                     <p>Av. Santos Dumont, 1510 - 1 <br />
                     andar - Aldeota, Fortaleza - <br />
                     CE, 60150-161</p>
-                    <a href="#">(85) 3051-3411</a>
+                    <Link to="telefone">(85) 3051-3411</Link>
                 </div>
             </div>
             <div className="container copyrigth">
