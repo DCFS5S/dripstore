@@ -1,6 +1,5 @@
 import './MainFooter.css'
 import { Link } from 'react-router-dom'
-<Link to='/'>Home</Link>
 
 export const MainFooter = () => {
     return (
