@@ -52,11 +52,11 @@ export const LoginPage = () => {
             </div> 
             <div className='login-body'>
                 <div>
-                    <label className='labels' htmlFor="username">Login*</label>
-                    <input className='input' type="text" value={username} onChange={handleUsernameChange} placeholder='Insira seu login ou email' />
+                    <label className='labels' htmlFor="username">Login *</label>
+                    <input className='inputs' type="text" value={username} onChange={handleUsernameChange} placeholder='Insira seu login ou email' />
                 </div>
                 <div> 
-                    <label className='labels' htmlFor="password">Senha*</label>
+                    <label className='labels' htmlFor="password">Senha *</label>
                     <input className='inputs' type="password" value={password} name="password" id="pass" onChange={handlePasswordChange} minLength={8} required placeholder='Insira sua senha' />
                 </div>
                 <div className='new-password'>
