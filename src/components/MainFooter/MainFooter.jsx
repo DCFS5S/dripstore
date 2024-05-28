@@ -1,4 +1,5 @@
 import './MainFooter.css'
+import { Link } from 'react-router-dom'
 
 export const MainFooter = () => {
     return (
@@ -10,30 +11,30 @@ export const MainFooter = () => {
                     adipiscing elit, sed do eiusmod tempor <br />
                     incididunt ut labore et dolore.</p>
                     <div className='image-links'>
-                        <a href="#"><img src="../../src/assets/icon-facebook.png" alt="" /></a>
-                        <a href="#"><img src="../../src/assets/icon-instagram.png" alt="" /></a>
-                        <a href="#"><img src="../../src/assets/icon-twitterx.png" alt="" /></a>
+                        <a target="_blank" href="https://facebook.com/dripstore"><img src="../../src/assets/icon-facebook.png" alt="" /></a>
+                        <a target="_blank" href="https://instagram.com/dripstore"><img src="../../src/assets/icon-instagram.png" alt="" /></a>
+                        <a target="_blank"href="https://twitter.com/dripstore"><img src="../../src/assets/icon-twitterx.png" alt="" /></a>
                     </div>
                 </div>
                 <div className="footer-colum-informacao">
                     <h4>Informação</h4>
                         <ul>
-                            <li><a href="#">Sobre Drip Store</a></li>
-                            <li><a href="#">Segurança</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Trabalhe conosco</a></li>
-                            <li><a href="#">Meus Pedidos</a></li>
+                            <li><Link to="/sobre">Sobre Drip Store</Link></li>
+                            <li><Link to="/privacidade">Segurança</Link></li>
+                            <li><Link to="/lista-desejos">Wishlist</Link></li>
+                            <li><Link to="/blog">Blog</Link></li>
+                            <li><Link to="/trabalhe-conosco">Trabalhe conosco</Link></li>
+                            <li><Link to="/meus-pedidos">Meus Pedidos</Link></li>
                         </ul>
                 </div>
                 <div className="footer-colum-informacao">
                     <h4>Categorias</h4>
                         <ul>
-                            <li><a href="#">Camisetas</a></li>
-                            <li><a href="#">Calças</a></li>
-                            <li><a href="#">Bonés</a></li>
-                            <li><a href="#">Headphones</a></li>
-                            <li><a href="#">Tênis</a></li>
+                            <li><Link to="/camisetas">Camisetas</Link></li>
+                            <li><Link to="/calças">Calças</Link></li>
+                            <li><Link to="/bones">Bonés</Link></li>
+                            <li><Link to="/fone-de-ouvido">Headphones</Link></li>
+                            <li><Link to="/tenis">Tênis</Link></li>
                         </ul>
                 </div>
                 <div className="footer-colum-contato">
@@ -41,7 +42,7 @@ export const MainFooter = () => {
                     <p>Av. Santos Dumont, 1510 - 1 <br />
                     andar - Aldeota, Fortaleza - <br />
                     CE, 60150-161</p>
-                    <a href="#">(85) 3051-3411</a>
+                    <Link to="telefone">(85) 3051-3411</Link>
                 </div>
             </div>
             <div className="container copyrigth">
