@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HeaderClean } from "../../components/HeaderClean/HeaderClean";
+import { Header } from "../../components/Header/Header";
 import "./CreateAccount.css";
 import { useEffect } from "react";
 import { Popup } from "../../components/Popup/Popup";
@@ -35,7 +35,7 @@ export const CreateAccount = () => {
 
   return (
     <>
-    <HeaderClean />
+    <Header />
     <section className="create-account-container">
       <section className="create-account-content">
         <h3>Criar conta</h3>
