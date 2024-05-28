@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../LoginPage/LoginPage.css'
 import { MainFooter } from '../MainFooter/MainFooter'
+import { Header } from '../Header/Header'
 
 export const LoginPage = () => {
     const [username, setUsername] = useState('')
@@ -43,6 +44,7 @@ export const LoginPage = () => {
    
     return (
         <>
+        <Header />
         <div className='body-login'>   
             <div className='login-wrapper'>
                 <div className='formulario-login'>
