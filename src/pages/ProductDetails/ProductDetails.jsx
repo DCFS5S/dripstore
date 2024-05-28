@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import productsData from "../../../products.json"
+import { apiRequest } from "../../service/apiRequest"
 
 export const ProductDetails = () => {
     const { id } = useParams()
@@ -7,14 +8,13 @@ export const ProductDetails = () => {
     const selectedProduct = productsData.find(product => id === product.id)
 
     const addToCart = () => {
-        fetch(
-            'https://6578d273f08799dc804619b0.mockapi.io/api/v1/cart',
-            {
-                method: 'POST',
-                headers: {'content-type':'application/json'},
-                body: JSON.stringify({ productId: id })
-            }
-        )
+        apiRequest({
+            data: {
+                productId: id,
+            },
+            method: 'POST',
+            path: '/orders/add-product',
+        })
     }
 
     if (!selectedProduct) {
